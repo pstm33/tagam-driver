@@ -1,0 +1,54 @@
+.DS_Store
+.thumbs.db
+node_modules
+
+# Quasar core related directories
+.quasar
+/dist
+
+# Cordova related directories and files
+/src-cordova/node_modules
+/src-cordova/platforms
+/src-cordova/plugins
+/src-cordova/www
+
+# Capacitor related directories and files
+/src-capacitor/www
+/src-capacitor/node_modules
+/src-capacitor/android/.gradle
+/src-capacitor/android/build
+/src-capacitor/android/app/build
+
+# Local secrets and machine-specific config
+*.local.json
+*.private.json
+*.keystore
+*.jks
+google-services.local.json
+_driver_login_success.private.json
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+.tmp-*
+
+# Generated verification artifacts
+device-*.xml
+android-walkthrough-results.json
+android-extra-walkthrough-results.json
+test-order-*-flow-result.json
+design-*.png
+test-order-*.png
+tagam-driver-samsung-launch.png
+*.apk
+*.aab
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

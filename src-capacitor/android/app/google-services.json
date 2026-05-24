@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "85413186790",
+    "project_id": "tagam-7d162",
+    "storage_bucket": "tagam-7d162.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85413186790:android:2d04cfee44a8863e91ff27",
+        "android_client_info": {
+          "package_name": "com.tagam.delivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85413186790-m3r4tn5u1e6b6rfgkaumg2lu3vmsajcp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagam.delivery",
+            "certificate_hash": "60bea9310102b39d6b0e6f4bd672abc930a8735b"
+          }
+        },
+        {
+          "client_id": "85413186790-o2273ucqgocgflperuvhfq9hamsgs13q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagam.delivery",
+            "certificate_hash": "377c144f1c664018654a130378d2c34672dd573d"
+          }
+        },
+        {
+          "client_id": "85413186790-qmdfeof2nl79acoraifg5g8q1f0sgfth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagam.delivery",
+            "certificate_hash": "b79a000a307064ac8ebebe73750e4812e904fe77"
+          }
+        },
+        {
+          "client_id": "85413186790-0o8kcqikbiph15vhqii0q46gja3u8rcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzNlB4HbBMNF0XODKmsV15s7EnUtvxd2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85413186790-0o8kcqikbiph15vhqii0q46gja3u8rcd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "85413186790-c7f0j7h7h9icgqtulo7ffp0n6c3egkt0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tagam.delivery"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85413186790:android:02efadeccbbc456f91ff27",
+        "android_client_info": {
+          "package_name": "com.tagam.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85413186790-0o8kcqikbiph15vhqii0q46gja3u8rcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzNlB4HbBMNF0XODKmsV15s7EnUtvxd2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85413186790-0o8kcqikbiph15vhqii0q46gja3u8rcd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "85413186790-c7f0j7h7h9icgqtulo7ffp0n6c3egkt0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tagam.delivery"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "com.tagam.driver",
+  "appName": "TAGAM Driver",
+  "webDir": "../dist/spa",
+  "android": {
+    "adjustMarginsForEdgeToEdge": "force"
+  }
+}

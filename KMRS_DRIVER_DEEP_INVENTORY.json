@@ -1,0 +1,1644 @@
+{
+  "generatedAt": "2026-05-23T03:10:22.148Z",
+  "counts": {
+    "routes": 75,
+    "pages": 59,
+    "components": 35,
+    "stores": 11,
+    "apiCalls": 100,
+    "plugins": 39,
+    "oldStyleFiles": 71
+  },
+  "routes": [
+    {
+      "path": "/",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "",
+      "component": "src/pages/User/IntroPage.vue"
+    },
+    {
+      "path": "select-language",
+      "component": "src/pages/User/SelectLanguage.vue"
+    },
+    {
+      "path": "selectzone",
+      "component": "src/pages/Account/SelectZone.vue"
+    },
+    {
+      "path": "/user",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "login",
+      "component": "src/pages/User/LoginPage.vue"
+    },
+    {
+      "path": "forgotpass",
+      "component": "src/pages/User/ForgotPassword.vue"
+    },
+    {
+      "path": "signup",
+      "component": "src/pages/User/SignupPage.vue"
+    },
+    {
+      "path": "/account",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "verify",
+      "component": "src/pages/Account/VerifyCode.vue"
+    },
+    {
+      "path": "attach_license",
+      "component": "src/pages/Account/AttachLicense.vue"
+    },
+    {
+      "path": "attach_license_photo",
+      "component": "src/pages/Account/AttachLicensephoto.vue"
+    },
+    {
+      "path": "verified_ty",
+      "component": "src/pages/Account/VerifiedPage.vue"
+    },
+    {
+      "path": "signup_ty",
+      "component": "src/pages/Account/SignupTy.vue"
+    },
+    {
+      "path": "schedule",
+      "component": "src/pages/Account/ScheduleList.vue"
+    },
+    {
+      "path": "earning-details",
+      "component": "src/pages/Account/EarningDetails.vue"
+    },
+    {
+      "path": "earning-activity",
+      "component": "src/pages/Account/EarningActivity.vue"
+    },
+    {
+      "path": "cashout",
+      "component": "src/pages/Account/CashoutPage.vue"
+    },
+    {
+      "path": "cashout-history",
+      "component": "src/pages/Account/CashoutHistory.vue"
+    },
+    {
+      "path": "cashout-succesful",
+      "component": "src/pages/Account/CashoutSuccesful.vue"
+    },
+    {
+      "path": "add-bank",
+      "component": "src/pages/Account/BankAccountcreate.vue"
+    },
+    {
+      "path": "settings",
+      "component": "src/pages/Account/SettingsPage.vue"
+    },
+    {
+      "path": "profile",
+      "component": "src/pages/Account/ProfilePage.vue"
+    },
+    {
+      "path": "edit-profile",
+      "component": "src/pages/Account/EditProfile.vue"
+    },
+    {
+      "path": "bankinfo",
+      "component": "src/pages/Account/BankInfo.vue"
+    },
+    {
+      "path": "payments",
+      "component": "src/pages/Account/PaymentsList.vue"
+    },
+    {
+      "path": "payment-add",
+      "component": "src/pages/Account/PaymentAdd.vue"
+    },
+    {
+      "path": "documents",
+      "component": "src/pages/Account/DocumentsPage.vue"
+    },
+    {
+      "path": "vehicle",
+      "component": "src/pages/Account/VehiclePage.vue"
+    },
+    {
+      "path": "license-photo",
+      "component": "src/pages/Account/TakeLicensePhoto.vue"
+    },
+    {
+      "path": "change-password",
+      "component": "src/pages/Account/ChangePassword.vue"
+    },
+    {
+      "path": "reviews",
+      "component": "src/pages/Account/ReviewsList.vue"
+    },
+    {
+      "path": "notifications",
+      "component": "src/pages/Account/NotificationsPage.vue"
+    },
+    {
+      "path": "delete",
+      "component": "src/pages/Account/DeleteAccount.vue"
+    },
+    {
+      "path": "deletety",
+      "component": "src/pages/Account/DeleteTy.vue"
+    },
+    {
+      "path": "cashin",
+      "component": "src/pages/Account/CashIn.vue"
+    },
+    {
+      "path": "cashin-successful",
+      "component": "src/pages/Account/CashinSuccessful.vue"
+    },
+    {
+      "path": "chat",
+      "component": "src/pages/Chat/ChatMain.vue"
+    },
+    {
+      "path": "/home",
+      "component": "layouts/MainLayout.vue"
+    },
+    {
+      "path": "",
+      "component": "src/pages/Home/ShiftStatus.vue"
+    },
+    {
+      "path": "deliveries",
+      "component": "src/pages/Home/DeliveriesPage.vue"
+    },
+    {
+      "path": "maps",
+      "component": "src/pages/Home/MapsPage.vue"
+    },
+    {
+      "path": "history",
+      "component": "src/pages/Home/OrderHistory.vue"
+    },
+    {
+      "path": "wallet",
+      "component": "src/pages/Home/WalletHistory.vue"
+    },
+    {
+      "path": "settings",
+      "component": "src/pages/Account/SettingsPage.vue"
+    },
+    {
+      "path": "schedule",
+      "component": "src/pages/Account/ScheduleList.vue"
+    },
+    {
+      "path": "find_schedule",
+      "component": "src/pages/shift/FindShift.vue"
+    },
+    {
+      "path": "earning",
+      "component": "src/pages/Account/EarningsDashboard.vue"
+    },
+    {
+      "path": "notifications",
+      "component": "src/pages/Account/ScheduleList.vue"
+    },
+    {
+      "path": "support",
+      "component": "src/pages/Home/SupportPage.vue"
+    },
+    {
+      "path": "privacy-policy",
+      "component": "src/pages/Home/PrivacyPolicy.vue"
+    },
+    {
+      "path": "legal",
+      "component": "src/pages/Home/LegalMenu.vue"
+    },
+    {
+      "path": "/shift",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "find",
+      "component": "src/pages/shift/FindShift.vue"
+    },
+    {
+      "path": "request-break",
+      "component": "src/pages/shift/RequestBreak.vue"
+    },
+    {
+      "path": "/order",
+      "component": "layouts/NotopnavLayout.vue"
+    },
+    {
+      "path": "new",
+      "component": "src/pages/Order/NewOrder.vue"
+    },
+    {
+      "path": "404",
+      "component": "src/pages/Order/OrderNotfound.vue"
+    },
+    {
+      "path": "/settings",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "language",
+      "component": "src/pages/Settings/LanguageSelection.vue"
+    },
+    {
+      "path": "notifications",
+      "component": "src/pages/Account/NotificationsPage.vue"
+    },
+    {
+      "path": "legal",
+      "component": "src/pages/Account/LegalPage.vue"
+    },
+    {
+      "path": "page/:page_id",
+      "component": "src/pages/Settings/PageRender.vue"
+    },
+    {
+      "path": "/location",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "permission",
+      "component": "src/pages/Location/LocationPermission.vue"
+    },
+    {
+      "path": "/page",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "privacy-policy",
+      "component": "src/pages/Page/PrivacyPolicy.vue"
+    },
+    {
+      "path": "support",
+      "component": "src/pages/Page/SupportPage.vue"
+    },
+    {
+      "path": "/help",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "",
+      "component": "src/pages/Help/HelpMenu.vue"
+    },
+    {
+      "path": "/chat",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "",
+      "component": "src/pages/Chat/ChatConversation.vue"
+    },
+    {
+      "path": "/errornetwork",
+      "component": "layouts/NotopfooterLayout.vue"
+    },
+    {
+      "path": "",
+      "component": "src/pages/Help/NetworkError.vue"
+    },
+    {
+      "path": "/:catchAll(.*)*",
+      "component": "src/pages/page/ErrorNotFound.vue"
+    }
+  ],
+  "pages": [
+    "src\\pages\\Account\\AttachLicense.vue",
+    "src\\pages\\Account\\AttachLicensephoto.vue",
+    "src\\pages\\Account\\BankAccountcreate.vue",
+    "src\\pages\\Account\\BankInfo.vue",
+    "src\\pages\\Account\\CashIn.vue",
+    "src\\pages\\Account\\CashinSuccessful.vue",
+    "src\\pages\\Account\\CashoutHistory.vue",
+    "src\\pages\\Account\\CashoutPage.vue",
+    "src\\pages\\Account\\CashoutSuccesful.vue",
+    "src\\pages\\Account\\ChangePassword.vue",
+    "src\\pages\\Account\\DeleteAccount.vue",
+    "src\\pages\\Account\\DeleteTy.vue",
+    "src\\pages\\Account\\DocumentsPage.vue",
+    "src\\pages\\Account\\EarningActivity.vue",
+    "src\\pages\\Account\\EarningDetails.vue",
+    "src\\pages\\Account\\EarningsDashboard.vue",
+    "src\\pages\\Account\\EditProfile.vue",
+    "src\\pages\\Account\\LegalPage.vue",
+    "src\\pages\\Account\\NotificationsPage.vue",
+    "src\\pages\\Account\\PaymentAdd.vue",
+    "src\\pages\\Account\\PaymentsList.vue",
+    "src\\pages\\Account\\ProfilePage.vue",
+    "src\\pages\\Account\\ReviewsList.vue",
+    "src\\pages\\Account\\ScheduleList.vue",
+    "src\\pages\\Account\\SelectZone.vue",
+    "src\\pages\\Account\\SettingsPage.vue",
+    "src\\pages\\Account\\SignupTy.vue",
+    "src\\pages\\Account\\TakeLicensePhoto.vue",
+    "src\\pages\\Account\\VehiclePage.vue",
+    "src\\pages\\Account\\VerifiedPage.vue",
+    "src\\pages\\Account\\VerifyCode.vue",
+    "src\\pages\\Chat\\ChatConversation.vue",
+    "src\\pages\\Chat\\ChatMain.vue",
+    "src\\pages\\Help\\HelpMenu.vue",
+    "src\\pages\\Help\\NetworkError.vue",
+    "src\\pages\\Home\\DeliveriesPage.vue",
+    "src\\pages\\Home\\LegalMenu.vue",
+    "src\\pages\\Home\\MapsPage.vue",
+    "src\\pages\\Home\\OrderHistory.vue",
+    "src\\pages\\Home\\PrivacyPolicy.vue",
+    "src\\pages\\Home\\ShiftStatus.vue",
+    "src\\pages\\Home\\SupportPage.vue",
+    "src\\pages\\Home\\TestPage.vue",
+    "src\\pages\\Home\\WalletHistory.vue",
+    "src\\pages\\Location\\LocationPermission.vue",
+    "src\\pages\\Order\\NewOrder.vue",
+    "src\\pages\\Order\\OrderNotfound.vue",
+    "src\\pages\\Page\\ErrorNotFound.vue",
+    "src\\pages\\Page\\PrivacyPolicy.vue",
+    "src\\pages\\Page\\SupportPage.vue",
+    "src\\pages\\Settings\\LanguageSelection.vue",
+    "src\\pages\\Settings\\PageRender.vue",
+    "src\\pages\\shift\\FindShift.vue",
+    "src\\pages\\shift\\RequestBreak.vue",
+    "src\\pages\\User\\ForgotPassword.vue",
+    "src\\pages\\User\\IntroPage.vue",
+    "src\\pages\\User\\LoginPage.vue",
+    "src\\pages\\User\\SelectLanguage.vue",
+    "src\\pages\\User\\SignupPage.vue"
+  ],
+  "components": [
+    "src\\components\\ActiveOrder.vue",
+    "src\\components\\AddCarPhoto.vue",
+    "src\\components\\AddCarPhotos.vue",
+    "src\\components\\AudioPlayback.vue",
+    "src\\components\\AudioRecorder.vue",
+    "src\\components\\CalendarHalf.vue",
+    "src\\components\\CalendarWeekly.vue",
+    "src\\components\\CashinAmountselection.vue",
+    "src\\components\\ConfirmDialog.vue",
+    "src\\components\\DeclineReason.vue",
+    "src\\components\\DeliveriesOverview.vue",
+    "src\\components\\FilterByzone.vue",
+    "src\\components\\launchNavigation.vue",
+    "src\\components\\ListLoading.vue",
+    "src\\components\\LoaderOrder.vue",
+    "src\\components\\LocationTracker.vue",
+    "src\\components\\MapComponents.vue",
+    "src\\components\\NotiButton.vue",
+    "src\\components\\NumberFormat.vue",
+    "src\\components\\OrderCustomer.vue",
+    "src\\components\\OrderDetails.vue",
+    "src\\components\\OrderDropoff.vue",
+    "src\\components\\OrderHelp.vue",
+    "src\\components\\OrderPickup.vue",
+    "src\\components\\PaymentList.vue",
+    "src\\components\\PaypalComponents.vue",
+    "src\\components\\PhotoCarousel.vue",
+    "src\\components\\PreparationCircularprogress.vue",
+    "src\\components\\RealTime.vue",
+    "src\\components\\ReviewOverview.vue",
+    "src\\components\\SavedPaymentlist.vue",
+    "src\\components\\StepsVerification.vue",
+    "src\\components\\StripeComponents.vue",
+    "src\\components\\TabMenu.vue",
+    "src\\components\\UploaderFile.vue"
+  ],
+  "stores": [
+    "src\\stores\\ActivityStore.js",
+    "src\\stores\\DeliveryOverviewStore.js",
+    "src\\stores\\DriverappStore.js",
+    "src\\stores\\index.js",
+    "src\\stores\\LocationStore.js",
+    "src\\stores\\MyScheduleStore.js",
+    "src\\stores\\OrderListStore.js",
+    "src\\stores\\RealtimeStore.js",
+    "src\\stores\\ReviewOverviewStore.js",
+    "src\\stores\\ScheduleStore.js",
+    "src\\stores\\store-flag.d.ts"
+  ],
+  "apiCalls": [
+    {
+      "file": "src\\App.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getSettings\", \"\""
+    },
+    {
+      "file": "src\\components\\ActiveOrder.vue",
+      "helper": "fetchDataByToken",
+      "arg": "methods, {"
+    },
+    {
+      "file": "src\\components\\AddCarPhoto.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"attachCarPhoto\", {"
+    },
+    {
+      "file": "src\\components\\AddCarPhotos.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"attachCarMultiplePhoto\", {"
+    },
+    {
+      "file": "src\\components\\CashinAmountselection.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getCashDomination\""
+    },
+    {
+      "file": "src\\components\\DeclineReason.vue",
+      "helper": "fetchData",
+      "arg": "\"declineReasonList\", \"\""
+    },
+    {
+      "file": "src\\components\\OrderCustomer.vue",
+      "helper": "fetchDataByToken",
+      "arg": "methods, {"
+    },
+    {
+      "file": "src\\components\\OrderDetails.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"orderdetails\", {"
+    },
+    {
+      "file": "src\\components\\OrderDropoff.vue",
+      "helper": "fetchDataByToken",
+      "arg": "methods, {"
+    },
+    {
+      "file": "src\\components\\OrderDropoff.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"deliveryfailed\", {"
+    },
+    {
+      "file": "src\\components\\OrderHelp.vue",
+      "helper": "fetchData",
+      "arg": "this.list_type, \"\""
+    },
+    {
+      "file": "src\\components\\OrderPickup.vue",
+      "helper": "fetchDataByToken",
+      "arg": "methods, {"
+    },
+    {
+      "file": "src\\components\\PaymentList.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"PaymentMethod\""
+    },
+    {
+      "file": "src\\components\\PaypalComponents.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"SavedPaymentProvider\", $data"
+    },
+    {
+      "file": "src\\components\\PaypalComponents.vue",
+      "helper": "PaymentPost",
+      "arg": "\"PaypalVerifyPayment\", $params"
+    },
+    {
+      "file": "src\\components\\SavedPaymentlist.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getPaymentSaved\""
+    },
+    {
+      "file": "src\\components\\SavedPaymentlist.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\components\\SavedPaymentlist.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\components\\StepsVerification.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"requestcode2\", {}"
+    },
+    {
+      "file": "src\\components\\StripeComponents.vue",
+      "helper": "PaymentPost",
+      "arg": "\"StripeCreateDriver\", $params"
+    },
+    {
+      "file": "src\\components\\StripeComponents.vue",
+      "helper": "PaymentPost",
+      "arg": "\"StripeSavePayment\", $params"
+    },
+    {
+      "file": "src\\components\\StripeComponents.vue",
+      "helper": "PaymentPost",
+      "arg": "\"StripeCreateIntent\", $params"
+    },
+    {
+      "file": "src\\components\\StripeComponents.vue",
+      "helper": "PaymentPost",
+      "arg": "\"StripePaymentIntent\", params"
+    },
+    {
+      "file": "src\\layouts\\MainLayout.vue",
+      "helper": "fetchDataByBearer",
+      "arg": "\"registerDevice\", {"
+    },
+    {
+      "file": "src\\layouts\\MainLayout.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"updateDevice\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\AttachLicense.vue",
+      "helper": "addLicense",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Account\\AttachLicensephoto.vue",
+      "helper": "addLicensephoto",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Account\\BankAccountcreate.vue",
+      "helper": "fetchDataByTokenPost2",
+      "arg": "\"Addbankaccount\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\BankInfo.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getBankinfo\""
+    },
+    {
+      "file": "src\\pages\\Account\\BankInfo.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"updateBankInfo\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\CashIn.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\CashinSuccessful.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutHistory.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getCashoutHistory\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutPage.vue",
+      "helper": "fetchDataByTokenPost2",
+      "arg": "\"getWalletBalance\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutPage.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutSuccesful.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\ChangePassword.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"changepassword\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\DeleteAccount.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"requestcode2\", {}"
+    },
+    {
+      "file": "src\\pages\\Account\\DeleteAccount.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"deleteaccount\", \"code=\" + data"
+    },
+    {
+      "file": "src\\pages\\Account\\DocumentsPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getlicense\", {}"
+    },
+    {
+      "file": "src\\pages\\Account\\DocumentsPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"updatelicense\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\EarningActivity.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\EarningDetails.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\EarningsDashboard.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Account\\EarningsDashboard.vue",
+      "helper": "fetchDataByTokenPost2",
+      "arg": "\"getWalletBalance\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\EditProfile.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"updateprofile\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\NotificationsPage.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getNotification\", \"page=\" + index"
+    },
+    {
+      "file": "src\\pages\\Account\\NotificationsPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"deleteNotifications\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\ReviewsList.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getReview\", \"page=\" + index"
+    },
+    {
+      "file": "src\\pages\\Account\\ScheduleList.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"shifthistory\", \"page=\" + index"
+    },
+    {
+      "file": "src\\pages\\Account\\SelectZone.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getOndemanzone\""
+    },
+    {
+      "file": "src\\pages\\Account\\SelectZone.vue",
+      "helper": "fetchDataByTokenPost2",
+      "arg": "\"setZone\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\SettingsPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"setNotifications\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\TakeLicensePhoto.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getLicensePhoto\""
+    },
+    {
+      "file": "src\\pages\\Account\\TakeLicensePhoto.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"updatelicensephoto\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\VehiclePage.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getVehicleInfo\""
+    },
+    {
+      "file": "src\\pages\\Account\\VehiclePage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"saveVehicleInfo\", {"
+    },
+    {
+      "file": "src\\pages\\Account\\VerifyCode.vue",
+      "helper": "verifyCode",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Account\\VerifyCode.vue",
+      "helper": "requestCode",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getUsers\", {"
+    },
+    {
+      "file": "src\\pages\\Help\\HelpMenu.vue",
+      "helper": "endShift",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Home\\DeliveriesPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getorderlist\", {"
+    },
+    {
+      "file": "src\\pages\\Home\\DeliveriesPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getorderlist\", {"
+    },
+    {
+      "file": "src\\pages\\Home\\MapsPage.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getorderlist\", {"
+    },
+    {
+      "file": "src\\pages\\Home\\OrderHistory.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Home\\OrderHistory.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Home\\PrivacyPolicy.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getPage\", {"
+    },
+    {
+      "file": "src\\pages\\Home\\ShiftStatus.vue",
+      "helper": "startShift",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Home\\ShiftStatus.vue",
+      "helper": "endShift",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Home\\ShiftStatus.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Home\\ShiftStatus.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Home\\WalletHistory.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getWalletBalance\""
+    },
+    {
+      "file": "src\\pages\\Home\\WalletHistory.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Order\\NewOrder.vue",
+      "helper": "orderPreview",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Order\\NewOrder.vue",
+      "helper": "acceptOrder",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Order\\NewOrder.vue",
+      "helper": "declineOrder",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\Order\\NewOrder.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\Page\\PrivacyPolicy.vue",
+      "helper": "fetchDataByToken",
+      "arg": "\"getPage\", {"
+    },
+    {
+      "file": "src\\pages\\Settings\\PageRender.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getPage\", \"page_id=\" + page_id"
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "helper": "fetchDataByTokenPost2",
+      "arg": "\"getAvailableShift\", {"
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "helper": "endShift",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\shift\\RequestBreak.vue",
+      "helper": "fetchDataByTokenPost",
+      "arg": ""
+    },
+    {
+      "file": "src\\pages\\User\\ForgotPassword.vue",
+      "helper": "requestResetPassword",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\User\\ForgotPassword.vue",
+      "helper": "resendResetPassword",
+      "arg": "this.data.details.uuid"
+    },
+    {
+      "file": "src\\pages\\User\\LoginPage.vue",
+      "helper": "userLogin",
+      "arg": "{"
+    },
+    {
+      "file": "src\\pages\\User\\SignupPage.vue",
+      "helper": "registerUser",
+      "arg": "{"
+    },
+    {
+      "file": "src\\stores\\ActivityStore.js",
+      "helper": "fetchData",
+      "arg": "\"getSettings\", \"\""
+    },
+    {
+      "file": "src\\stores\\ActivityStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getZone\", \"\""
+    },
+    {
+      "file": "src\\stores\\ActivityStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getZoneList\", \"\""
+    },
+    {
+      "file": "src\\stores\\ActivityStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getOnlineStatus\", \"\""
+    },
+    {
+      "file": "src\\stores\\DeliveryOverviewStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"deliveriesOverview\""
+    },
+    {
+      "file": "src\\stores\\DriverappStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getRemainingCashBalance\""
+    },
+    {
+      "file": "src\\stores\\DriverappStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getTotalTask\", \"date=\" + date"
+    },
+    {
+      "file": "src\\stores\\RealtimeStore.js",
+      "helper": "getRealtime",
+      "arg": "this.getevent"
+    },
+    {
+      "file": "src\\stores\\ReviewOverviewStore.js",
+      "helper": "fetchDataByTokenPost",
+      "arg": "\"getReviewSummary\""
+    },
+    {
+      "file": "src\\stores\\ScheduleStore.js",
+      "helper": "getShift",
+      "arg": "{"
+    },
+    {
+      "file": "src\\stores\\ScheduleStore.js",
+      "helper": "getShift",
+      "arg": "{"
+    }
+  ],
+  "plugins": [
+    {
+      "file": "src\\api\\APIinterface.js",
+      "plugin": "@capacitor/toast"
+    },
+    {
+      "file": "src\\api\\AppCamera.js",
+      "plugin": "@capacitor/camera"
+    },
+    {
+      "file": "src\\api\\AppCamera.js",
+      "plugin": "@capacitor/filesystem"
+    },
+    {
+      "file": "src\\api\\AppLocation.js",
+      "plugin": "@capacitor/geolocation"
+    },
+    {
+      "file": "src\\api\\AppLocation.js",
+      "plugin": "@awesome-cordova-plugins/location-accuracy"
+    },
+    {
+      "file": "src\\App.vue",
+      "plugin": "@capacitor-community/fcm"
+    },
+    {
+      "file": "src\\App.vue",
+      "plugin": "@capacitor/push-notifications"
+    },
+    {
+      "file": "src\\App.vue",
+      "plugin": "@capacitor/network"
+    },
+    {
+      "file": "src\\App.vue",
+      "plugin": "@capacitor/app"
+    },
+    {
+      "file": "src\\boot\\FirebaseChat.js",
+      "plugin": "firebase/app"
+    },
+    {
+      "file": "src\\boot\\FirebaseChat.js",
+      "plugin": "firebase/firestore"
+    },
+    {
+      "file": "src\\components\\AddCarPhotos.vue",
+      "plugin": "@capacitor-community/camera-preview"
+    },
+    {
+      "file": "src\\components\\AudioRecorder.vue",
+      "plugin": "capacitor-voice-recorder"
+    },
+    {
+      "file": "src\\components\\launchNavigation.vue",
+      "plugin": "@capacitor/app-launcher"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "@capacitor/geolocation"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "@capacitor-community/http"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "@capacitor/core"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "@capacitor/core"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "BackgroundGeolocation"
+    },
+    {
+      "file": "src\\components\\LocationTracker.vue",
+      "plugin": "firebase/firestore"
+    },
+    {
+      "file": "src\\components\\OrderCustomer.vue",
+      "plugin": "firebase/firestore"
+    },
+    {
+      "file": "src\\components\\RealTime.vue",
+      "plugin": "@capacitor-community/native-audio"
+    },
+    {
+      "file": "src\\components\\RealTime.vue",
+      "plugin": "@capacitor/local-notifications"
+    },
+    {
+      "file": "src\\layouts\\MainLayout.vue",
+      "plugin": "@capacitor/device"
+    },
+    {
+      "file": "src\\layouts\\MainLayout.vue",
+      "plugin": "@capacitor-community/fcm"
+    },
+    {
+      "file": "src\\layouts\\MainLayout.vue",
+      "plugin": "@capacitor-community/keep-awake"
+    },
+    {
+      "file": "src\\pages\\Account\\SettingsPage.vue",
+      "plugin": "@capacitor-community/keep-awake"
+    },
+    {
+      "file": "src\\pages\\Account\\SettingsPage.vue",
+      "plugin": "@capacitor-community/fcm"
+    },
+    {
+      "file": "src\\pages\\Account\\VerifiedPage.vue",
+      "plugin": "@capacitor/app"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "plugin": "firebase/firestore"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "plugin": "capacitor-voice-recorder"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "plugin": "@capacitor/app"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "plugin": "capacitor-native-settings"
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatMain.vue",
+      "plugin": "firebase/firestore"
+    },
+    {
+      "file": "src\\pages\\Help\\NetworkError.vue",
+      "plugin": "@capacitor/network"
+    },
+    {
+      "file": "src\\pages\\Home\\ShiftStatus.vue",
+      "plugin": "@capacitor/geolocation"
+    },
+    {
+      "file": "src\\pages\\Location\\LocationPermission.vue",
+      "plugin": "@capacitor/app"
+    },
+    {
+      "file": "src\\pages\\Location\\LocationPermission.vue",
+      "plugin": "@capacitor/app-launcher"
+    },
+    {
+      "file": "src\\pages\\Location\\LocationPermission.vue",
+      "plugin": "@capacitor/core"
+    }
+  ],
+  "oldStyle": [
+    {
+      "file": "src\\components\\ActiveOrder.vue",
+      "hits": [
+        "bg-grey-1",
+        "q-pa-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\AddCarPhoto.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\AddCarPhotos.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\"",
+        "color=\"blue\""
+      ]
+    },
+    {
+      "file": "src\\components\\AudioRecorder.vue",
+      "hits": [
+        "text-weight-bold",
+        "color=\"green\""
+      ]
+    },
+    {
+      "file": "src\\components\\CalendarHalf.vue",
+      "hits": [
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\components\\CalendarWeekly.vue",
+      "hits": [
+        "bg-grey-1",
+        "radius8"
+      ]
+    },
+    {
+      "file": "src\\components\\CashinAmountselection.vue",
+      "hits": [
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\ConfirmDialog.vue",
+      "hits": [
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\DeclineReason.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold",
+        "color=\"primary\"",
+        "color=\"green\""
+      ]
+    },
+    {
+      "file": "src\\components\\DeliveriesOverview.vue",
+      "hits": [
+        "q-pl-md",
+        "text-weight-bold",
+        "color=\"blue\""
+      ]
+    },
+    {
+      "file": "src\\components\\FilterByzone.vue",
+      "hits": [
+        "bg-mydark",
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\launchNavigation.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\ListLoading.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\NotiButton.vue",
+      "hits": [
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\OrderCustomer.vue",
+      "hits": [
+        "bg-grey-1",
+        "bg-mydark",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\"",
+        "color=\"green\""
+      ]
+    },
+    {
+      "file": "src\\components\\OrderDropoff.vue",
+      "hits": [
+        "bg-grey-1",
+        "bg-mydark",
+        "q-pa-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\"",
+        "color=\"blue\""
+      ]
+    },
+    {
+      "file": "src\\components\\OrderHelp.vue",
+      "hits": [
+        "color=\"primary\"",
+        "color=\"blue\"",
+        "color=\"green\""
+      ]
+    },
+    {
+      "file": "src\\components\\OrderPickup.vue",
+      "hits": [
+        "bg-mydark",
+        "text-weight-bold",
+        "color=\"primary\"",
+        "color=\"blue\""
+      ]
+    },
+    {
+      "file": "src\\components\\PaymentList.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\PaypalComponents.vue",
+      "hits": [
+        "q-pa-md",
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8"
+      ]
+    },
+    {
+      "file": "src\\components\\PhotoCarousel.vue",
+      "hits": [
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\components\\PreparationCircularprogress.vue",
+      "hits": [
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\components\\ReviewOverview.vue",
+      "hits": [
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\components\\SavedPaymentlist.vue",
+      "hits": [
+        "bg-mydark",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\StepsVerification.vue",
+      "hits": [
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\components\\StripeComponents.vue",
+      "hits": [
+        "q-pa-md",
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8"
+      ]
+    },
+    {
+      "file": "src\\components\\TabMenu.vue",
+      "hits": [
+        "bg-white text-dark"
+      ]
+    },
+    {
+      "file": "src\\layouts\\NotopnavLayout.vue",
+      "hits": [
+        "bg-grey-1",
+        "bg-mydark",
+        "bg-white text-dark"
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\AttachLicense.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "q-pl-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\AttachLicensephoto.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\BankInfo.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\CashIn.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\CashinSuccessful.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutHistory.vue",
+      "hits": [
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutPage.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\CashoutSuccesful.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\DeleteAccount.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\DeleteTy.vue",
+      "hits": [
+        "q-pa-md"
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\DocumentsPage.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\EarningActivity.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\EarningDetails.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\EarningsDashboard.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\EditProfile.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\LegalPage.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\NotificationsPage.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\ProfilePage.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\ReviewsList.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\ScheduleList.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\SettingsPage.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\SignupTy.vue",
+      "hits": [
+        "q-pa-md",
+        "q-pl-md",
+        "text-h6",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\TakeLicensePhoto.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\VehiclePage.vue",
+      "hits": [
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\VerifiedPage.vue",
+      "hits": [
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Account\\VerifyCode.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "q-pl-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatConversation.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-h6",
+        "text-weight-bold",
+        "color=\"primary\"",
+        "color=\"blue\"",
+        "color=\"green\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Chat\\ChatMain.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Help\\HelpMenu.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Help\\NetworkError.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Home\\OrderHistory.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Home\\PrivacyPolicy.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Home\\TestPage.vue",
+      "hits": [
+        "bg-grey-1",
+        "q-pa-md",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Home\\WalletHistory.vue",
+      "hits": [
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Order\\NewOrder.vue",
+      "hits": [
+        "radius8"
+      ]
+    },
+    {
+      "file": "src\\pages\\Page\\ErrorNotFound.vue",
+      "hits": [
+        "q-pa-md",
+        "color=\"blue\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Page\\PrivacyPolicy.vue",
+      "hits": [
+        "bg-grey-1",
+        "text-weight-bold"
+      ]
+    },
+    {
+      "file": "src\\pages\\Page\\SupportPage.vue",
+      "hits": [
+        "bg-grey-1"
+      ]
+    },
+    {
+      "file": "src\\pages\\Settings\\LanguageSelection.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\Settings\\PageRender.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\shift\\FindShift.vue",
+      "hits": [
+        "bg-grey-1",
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pl-md",
+        "text-weight-bold",
+        "radius8",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\shift\\RequestBreak.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    },
+    {
+      "file": "src\\pages\\User\\SelectLanguage.vue",
+      "hits": [
+        "bg-mydark",
+        "bg-white text-dark",
+        "q-pa-md",
+        "text-weight-bold",
+        "color=\"primary\""
+      ]
+    }
+  ]
+}
