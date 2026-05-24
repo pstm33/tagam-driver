@@ -12,13 +12,13 @@
             <div class="flex items-start justify-between gap-3">
               <div>
                 <div class="tagam-eyebrow">
-                  Courier cockpit
+                  {{ $t("Status") }}
                 </div>
                 <h1 class="tagam-title mt-2">
-                  {{ Activity.settings_data.on_demand_availability ? "On-demand availability" : $t("Today Schedule") }}
+                  {{ Activity.settings_data.on_demand_availability ? $t("Availability") : $t("Today Schedule") }}
                 </h1>
                 <p class="tagam-copy mt-2">
-                  GPS, cash balance and delivery workload stay visible before every shift decision.
+                  {{ $t("Manage your shift, location and current delivery status") }}.
                 </p>
               </div>
               <div
@@ -26,10 +26,10 @@
                 :class="Activity.is_online || Schedule.isWorking ? 'bg-tagam-mint text-tagam-leafDark' : 'bg-white/10 text-white'"
               >
                 <div class="text-[11px] font-extrabold uppercase tracking-[0.08em]">
-                  Status
+                  {{ $t("Status") }}
                 </div>
                 <div class="text-[14px] font-black">
-                  {{ Activity.is_online || Schedule.isWorking ? "Online" : "Standby" }}
+                  {{ Activity.is_online || Schedule.isWorking ? $t("Online") : $t("Offline") }}
                 </div>
               </div>
             </div>
@@ -49,9 +49,9 @@
               </div>
             </div>
             <div class="tagam-panel p-4">
-              <div class="text-[12px] font-bold text-tagam-muted">Location</div>
+              <div class="text-[12px] font-bold text-tagam-muted">{{ $t("Location") }}</div>
               <div class="mt-1 text-[22px] font-black" :class="location_enabled ? 'text-tagam-leaf' : 'text-tagam-coral'">
-                {{ location_enabled ? "Ready" : "Off" }}
+                {{ location_enabled ? $t("Enabled") : $t("Disabled") }}
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
                   class="rounded-full px-4 py-2 text-[13px] font-black"
                   :class="Schedule.isWorking ? 'bg-tagam-mint text-tagam-leafDark' : 'bg-white text-tagam-muted'"
                 >
-                  {{ Schedule.isWorking ? "Working" : "Not Working" }}
+                  {{ Schedule.isWorking ? $t("Working") : $t("Not Working") }}
                 </div>
                 <q-btn
                   v-if="Schedule.hasBreak"

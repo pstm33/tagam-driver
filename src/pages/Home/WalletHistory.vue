@@ -19,7 +19,7 @@
               v-if="!loading"
               unelevated
               no-caps
-              class="h-11 rounded-[8px] bg-tagam-amber px-4 font-black text-white"
+              class="h-11 rounded-[8px] bg-tagam-gold px-4 font-black text-white"
               @click="showCashin"
             >
               {{ $t("CASH IN") }}
@@ -172,7 +172,7 @@ export default {
     return { Activity };
   },
   created() {
-    this.Activity.setTitle(this.$t("History"));
+    this.Activity.setTitle(this.$t("Wallet"));
     this.date_now = APIinterface.getDateNow();
     this.getWalletBalance();
   },

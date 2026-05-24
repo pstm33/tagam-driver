@@ -24,17 +24,17 @@
         <div class="flex items-start justify-between gap-3">
           <div>
             <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-              Live map
+              {{ $t("Maps") }}
             </div>
             <h1 class="m-0 mt-1 text-[24px] font-black text-tagam-ink">
-              {{ hasDestination ? "Route in progress" : $t("Maps") }}
+              {{ hasDestination ? $t("Route") : $t("Maps") }}
             </h1>
             <p class="m-0 mt-1 text-[13px] font-semibold leading-5 text-tagam-muted">
-              {{ hasDestination ? "Destination is ready for navigation." : "Waiting for an active delivery destination." }}
+              {{ hasDestination ? $t("Destination is ready") : $t("No active delivery destination") }}
             </p>
           </div>
           <div class="rounded-[8px] bg-tagam-mint px-3 py-2 text-center text-tagam-leafDark">
-            <div class="text-[11px] font-extrabold uppercase tracking-[0.08em]">Pins</div>
+            <div class="text-[11px] font-extrabold uppercase tracking-[0.08em]">{{ $t("Pins") }}</div>
             <div class="text-[18px] font-black">{{ Object.keys(markers).length }}</div>
           </div>
         </div>

@@ -6,17 +6,17 @@
           <div class="flex items-start justify-between gap-4">
             <div>
               <div class="tagam-eyebrow">
-                Active delivery
+                {{ $t("Deliveries") }}
               </div>
               <h1 class="tagam-title mt-1">
                 {{ hasOrder ? data.delivery_steps.instructions : $t("Deliveries") }}
               </h1>
               <p class="tagam-copy mt-2">
-                Assigned KMRS orders appear here. Pull down to refresh the live queue.
+                {{ $t("Pull down the page to refresh") }}
               </p>
             </div>
             <div class="rounded-[8px] bg-white/12 px-3 py-2 text-center text-white">
-              <div class="text-[11px] font-extrabold uppercase tracking-[0.08em]">Queue</div>
+              <div class="text-[11px] font-extrabold uppercase tracking-[0.08em]">{{ $t("Orders") }}</div>
               <div class="text-[18px] font-black">{{ Object.keys(list).length || 0 }}</div>
             </div>
           </div>

@@ -42,7 +42,16 @@ export const useActivityStore = defineStore("activity", {
     },
   },
 
-  persist: false,
+  persist: {
+    paths: [
+      "app_language",
+      "rtl",
+      "choose_language",
+      "dark_mode",
+      "push_notifications",
+      "keep_awake",
+    ],
+  },
 
   actions: {
     setTitle(data) {

@@ -12,7 +12,7 @@
             TAGAM
           </div>
           <div class="text-[11px] font-semibold text-tagam-muted">
-            Driver workspace
+            Driver app
           </div>
         </div>
       </div>
@@ -44,13 +44,13 @@
       <div class="hidden md:block">
         <div class="max-w-xl">
           <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-tagam-line bg-white px-3 py-2 text-[12px] font-extrabold uppercase tracking-[0.12em] text-tagam-leaf shadow-tagam-card">
-            Live courier operations
+            KMRS courier module
           </div>
           <h1 class="m-0 text-[46px] font-black leading-[1.02] text-tagam-ink">
-            Быстрый рабочий экран курьера TAGAM.
+            Рабочее приложение курьера TAGAM.
           </h1>
           <p class="mt-5 max-w-md text-[17px] font-semibold leading-7 text-tagam-muted">
-            Коробочная KMRS-логика остается внутри, а интерфейс постепенно переезжает на чистый современный Tailwind-слой.
+            Заказы, смена, карта и кошелек в одном понятном интерфейсе поверх коробочной логики KMRS.
           </p>
           <div class="mt-8 grid max-w-lg grid-cols-3 gap-3">
             <div class="rounded-[8px] bg-white p-4 shadow-tagam-card">
