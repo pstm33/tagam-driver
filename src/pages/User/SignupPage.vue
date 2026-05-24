@@ -18,7 +18,7 @@
     <ListLoading v-if="inner_loading"></ListLoading>
     <section v-else class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
-        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">Courier onboarding</div>
+        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">{{ $t("Courier onboarding") }}</div>
         <h1 class="m-0 mt-2 text-[28px] font-black leading-tight">
           {{ $t("Become our delivery partner") }}
         </h1>

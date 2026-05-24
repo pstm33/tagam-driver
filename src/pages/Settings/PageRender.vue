@@ -34,7 +34,7 @@
       </template>
       <template v-if="!hasData && !loading">
         <div class="text-center full-width">
-          <div class="text-[16px] font-black text-tagam-ink">No results</div>
+          <div class="text-[16px] font-black text-tagam-ink">{{ $t("No results") }}</div>
           <p class="text-grey font12">
             {{ $t("This page is not available please come back later") }}.
           </p>

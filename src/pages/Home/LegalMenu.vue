@@ -2,9 +2,9 @@
   <q-page class="min-h-screen bg-tagam-canvas px-4 pb-28 pt-5 text-tagam-ink">
     <section class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-white p-5 shadow-tagam-card">
-        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">Policies</div>
+        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">{{ $t("Policies") }}</div>
         <h1 class="m-0 mt-1 text-[28px] font-black text-tagam-ink">{{ $t("Legal") }}</h1>
-        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">Terms, privacy and operating documents.</p>
+        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">{{ $t("Terms privacy and operating documents") }}.</p>
       </div>
       <div class="overflow-hidden rounded-[8px] border border-tagam-line bg-white shadow-tagam-card">
       <q-list separator>

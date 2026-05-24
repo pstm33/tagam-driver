@@ -63,7 +63,7 @@
         </div>
 
       <div v-if="date_range" class="mb-3 rounded-[8px] bg-tagam-mint px-4 py-3">
-        <div class="text-[12px] font-bold text-tagam-muted">Viewing</div>
+        <div class="text-[12px] font-bold text-tagam-muted">{{ $t("Viewing") }}</div>
         <div class="text-[15px] font-black text-tagam-leafDark">{{ date_range }}</div>
       </div>
 

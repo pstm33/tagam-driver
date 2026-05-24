@@ -34,7 +34,7 @@
               <q-checkbox v-model="zone_ids" val="all" color="primary" />
             </q-item-section>
             <q-item-section>
-              <q-item-label>All</q-item-label>
+              <q-item-label>{{ $t("All") }}</q-item-label>
             </q-item-section>
           </q-item> -->
 

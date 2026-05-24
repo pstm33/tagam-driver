@@ -11,7 +11,7 @@
           <div class="text-weight-bold text-white">{{ title }}</div>
         </div>
         <q-btn dense flat icon="close" color="white" v-close-popup>
-          <q-tooltip class="bg-white text-primary">Close</q-tooltip>
+          <q-tooltip class="bg-white text-primary">{{ $t("Close") }}</q-tooltip>
         </q-btn>
       </q-bar>
 

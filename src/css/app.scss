@@ -67,6 +67,10 @@ body {
   --app-control: rgba(255, 255, 255, 0.06);
   --app-control-border: rgba(255, 255, 255, 0.12);
   --app-control-fg: #faf5ea;
+  --app-hero-bg: #1b1c17;
+  --app-hero-fg: #faf5ea;
+  --app-on-accent: #07110d;
+  --app-on-dark: #ffffff;
   font-family: "Inter", "Nunito", system-ui, sans-serif;
   color: var(--app-fg);
   background:
@@ -74,6 +78,32 @@ body {
     radial-gradient(circle at 94% 4%, rgba(242, 138, 0, 0.12), transparent 24rem),
     var(--app-bg);
   letter-spacing: 0;
+}
+
+body.body--light {
+  --app-bg: #f6f4ef;
+  --app-bg-2: #fff3df;
+  --app-fg: #131510;
+  --app-muted: #6c685f;
+  --app-card: rgba(255, 255, 255, 0.9);
+  --app-card-solid: #ffffff;
+  --app-border: rgba(25, 22, 16, 0.09);
+  --app-glass: rgba(255, 255, 255, 0.82);
+  --app-tabbar: rgba(255, 255, 255, 0.9);
+  --app-accent: #f28a00;
+  --app-accent-strong: #d97600;
+  --app-accent-soft: #fff3df;
+  --app-control: rgba(255, 255, 255, 0.72);
+  --app-control-border: rgba(25, 22, 16, 0.09);
+  --app-control-fg: #131510;
+  --app-hero-bg: #131510;
+  --app-hero-fg: #ffffff;
+  --app-on-accent: #11110d;
+  --app-on-dark: #ffffff;
+  background:
+    radial-gradient(circle at 18% -10%, rgba(242, 138, 0, 0.18), transparent 34rem),
+    radial-gradient(circle at 94% 4%, rgba(255, 243, 223, 0.92), transparent 24rem),
+    linear-gradient(145deg, #f6f4ef 0%, #f6f4ef 54%, #fff3df 100%);
 }
 
 .tw-header {
@@ -111,8 +141,8 @@ body {
   border: 1px solid var(--app-border);
   background:
     radial-gradient(circle at 82% 0%, rgba(255, 157, 22, 0.22), transparent 14rem),
-    linear-gradient(145deg, rgba(27, 28, 23, 0.95), rgba(16, 17, 14, 0.95));
-  color: var(--app-fg);
+    linear-gradient(145deg, color-mix(in srgb, var(--app-hero-bg) 94%, var(--app-accent) 6%), var(--app-hero-bg));
+  color: var(--app-hero-fg);
   box-shadow: 0 20px 58px rgba(0, 0, 0, 0.36);
 }
 
@@ -139,7 +169,7 @@ body {
 }
 
 .tagam-hero .tagam-title {
-  color: var(--app-fg);
+  color: var(--app-hero-fg);
 }
 
 .tagam-copy {
@@ -172,7 +202,7 @@ body {
   min-height: 52px;
   border-radius: 8px;
   background: var(--app-accent) !important;
-  color: #07110d !important;
+  color: var(--app-on-accent) !important;
   font-weight: 900;
   box-shadow: 0 14px 34px rgba(255, 157, 22, 0.28);
 }
@@ -235,12 +265,12 @@ body {
 
 .modern-tabs .q-tab--active {
   background: var(--app-accent);
-  color: #07110d !important;
+  color: var(--app-on-accent) !important;
 }
 
 .modern-tabs .q-tab--active .q-tab__label,
 .modern-tabs .q-tab--active .q-tab__icon {
-  color: #07110d !important;
+  color: var(--app-on-accent) !important;
 }
 
 .modern-settings-list .q-item {
@@ -260,6 +290,27 @@ body {
   color: var(--app-accent);
 }
 
+.bg-tagam-canvas {
+  background-color: var(--app-bg) !important;
+}
+
+.bg-tagam-panel {
+  background-color: var(--app-card-solid) !important;
+}
+
+.bg-tagam-ink {
+  background-color: var(--app-hero-bg) !important;
+  color: var(--app-hero-fg) !important;
+}
+
+.bg-tagam-night {
+  background-color: var(--app-hero-bg) !important;
+}
+
+.text-tagam-cream {
+  color: var(--app-hero-fg) !important;
+}
+
 .bg-white {
   background-color: var(--app-card) !important;
 }
@@ -275,7 +326,7 @@ body {
 }
 
 .text-white {
-  color: var(--app-fg) !important;
+  color: var(--app-on-dark) !important;
 }
 
 .border-tagam-line,
@@ -321,7 +372,7 @@ body {
 .bg-tagam-amber,
 .bg-tagam-saffron {
   background-color: var(--app-accent) !important;
-  color: #07110d !important;
+  color: var(--app-on-accent) !important;
 }
 
 .bg-tagam-mint,
@@ -348,7 +399,7 @@ body {
 }
 
 .border {
-  border: 1px solid red;
+  border-color: var(--app-border) !important;
 }
 
 .bg-mydark {

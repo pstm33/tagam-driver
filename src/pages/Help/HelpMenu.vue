@@ -34,7 +34,7 @@
         </q-item-section>
         <q-item-section>
           <q-item-label class="font-black">{{ $t("Chat Support") }}</q-item-label>
-          <q-item-label caption class="font-semibold">Support channel</q-item-label>
+          <q-item-label caption class="font-semibold">{{ $t("Support channel") }}</q-item-label>
         </q-item-section>
         <q-item-section side>
           <q-icon name="chevron_right" color="grey-6" />
@@ -47,7 +47,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label class="font-black">{{ $t("End Shift") }}</q-item-label>
-            <q-item-label caption class="font-semibold">Finish active schedule</q-item-label>
+            <q-item-label caption class="font-semibold">{{ $t("Finish active schedule") }}</q-item-label>
           </q-item-section>
           <q-item-section side>
             <q-icon name="chevron_right" color="grey-6" />

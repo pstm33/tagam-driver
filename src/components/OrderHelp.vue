@@ -81,7 +81,7 @@
               <q-radio v-model="reason" val="others" color="primary" dense />
             </q-item-section>
             <q-item-section>
-              <q-item-label>Others</q-item-label>
+              <q-item-label>{{ $t("Others") }}</q-item-label>
             </q-item-section>
           </q-item>
         </q-list>

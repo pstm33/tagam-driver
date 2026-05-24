@@ -46,7 +46,7 @@
                 </h1>
               </div>
               <div class="rounded-[8px] bg-tagam-cream px-3 py-2 text-right">
-                <div class="text-[11px] font-bold text-tagam-muted">Total</div>
+                <div class="text-[11px] font-bold text-tagam-muted">{{ $t("Total") }}</div>
                 <div class="text-[18px] font-black text-tagam-leafDark">
                   {{ data.total }}
                 </div>
@@ -121,7 +121,7 @@
               </q-list>
             </div>
             <div class="min-w-[88px] text-right">
-              <p class="m-0 text-[11px] font-bold text-tagam-muted">Order total</p>
+              <p class="m-0 text-[11px] font-bold text-tagam-muted">{{ $t("Order total") }}</p>
               <div class="text-[16px] font-black text-tagam-leaf">
                 {{ data.total }}
               </div>

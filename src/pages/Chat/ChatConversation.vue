@@ -15,7 +15,7 @@
         </q-avatar>
         <q-toolbar-title class="text-capitalize">
           <div class="text-[17px] font-black">{{ getChatWith.first_name }}</div>
-          <div class="text-[12px] font-semibold text-tagam-muted">Live support conversation</div>
+          <div class="text-[12px] font-semibold text-tagam-muted">{{ $t("Live support conversation") }}</div>
         </q-toolbar-title>
       </template>
     </q-toolbar>

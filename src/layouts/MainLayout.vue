@@ -45,15 +45,15 @@
           </div>
           <div class="mt-4 grid grid-cols-2 gap-2">
             <div class="rounded-[8px] bg-white/10 px-3 py-2">
-              <div class="text-[11px] font-bold text-white/60">Mode</div>
+              <div class="text-[11px] font-bold text-white/60">{{ $t("Mode") }}</div>
               <div class="text-[13px] font-black text-tagam-leaf">
-                {{ Activity.is_online ? "Online" : "Ready" }}
+                {{ Activity.is_online ? $t("Online") : $t("Ready") }}
               </div>
             </div>
             <div class="rounded-[8px] bg-white/10 px-3 py-2">
-              <div class="text-[11px] font-bold text-white/60">Role</div>
+              <div class="text-[11px] font-bold text-white/60">{{ $t("Role") }}</div>
               <div class="truncate text-[13px] font-black text-white">
-                {{ data.employment_type || "driver" }}
+                {{ data.employment_type ? $t(data.employment_type) : $t("Driver") }}
               </div>
             </div>
           </div>

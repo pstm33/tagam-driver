@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <q-pull-to-refresh @refresh="refresh">
     <q-page class="min-h-screen bg-tagam-canvas px-4 pb-28 pt-5 text-tagam-ink">
       <section class="mx-auto max-w-4xl">
@@ -6,7 +6,7 @@
           <div class="flex items-start justify-between gap-4">
             <div>
               <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-                Earnings
+                {{ $t("Earnings") }}
               </div>
               <h1 class="m-0 mt-1 text-[30px] font-black">
                 {{ loading_earnings ? "--" : earnings.pretty }}

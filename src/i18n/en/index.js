@@ -389,6 +389,33 @@ export default {
   "Before you start receiving orders, please choose your preferred zone. Select a zone to get started and receive orders from your desired location":
     "Before you start receiving orders, please choose your preferred zone. Select a zone to get started and receive orders from your desired location",
 
+  "Driver app": "Driver app",
+  "KMRS courier module": "KMRS courier module",
+  "TAGAM courier workspace": "TAGAM courier workspace",
+  "Orders shifts map and wallet in one clear interface over KMRS boxed logic":
+    "Orders, shifts, map and wallet in one clear interface over KMRS boxed logic",
+  Tracking: "Tracking",
+  Mode: "Mode",
+  Role: "Role",
+  Ready: "Ready",
+  Driver: "Driver",
+  driver: "driver",
+  contractor: "contractor",
+  employee: "employee",
+  Policies: "Policies",
+  "Terms privacy and operating documents": "Terms, privacy and operating documents",
+  "Courier help desk and operational contact points":
+    "Courier help desk and operational contact points",
+  "Email support": "Email support",
+  "Support channel": "Support channel",
+  All: "All",
+  "Courier onboarding": "Courier onboarding",
+  "Live support conversation": "Live support conversation",
+  Total: "Total",
+  "Order total": "Order total",
+  Viewing: "Viewing",
+  "Finish active schedule": "Finish active schedule",
+
   "View order": "View order",
 };
 

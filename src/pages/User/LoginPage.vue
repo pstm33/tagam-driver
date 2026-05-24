@@ -7,7 +7,7 @@
         <img src="/tagam-logo.svg" alt="TAGAM" class="h-8 w-auto" />
         <div class="leading-tight">
           <div class="text-[11px] font-semibold text-tagam-muted">
-            Driver app
+            {{ $t("Driver app") }}
           </div>
         </div>
       </div>
@@ -39,26 +39,26 @@
       <div class="hidden md:block">
         <div class="max-w-xl">
           <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-tagam-line bg-tagam-mint px-3 py-2 text-[12px] font-extrabold uppercase tracking-[0.12em] text-tagam-leaf shadow-tagam-card">
-            KMRS courier module
+            {{ $t("KMRS courier module") }}
           </div>
           <h1 class="m-0 text-[46px] font-black leading-[1.02] text-tagam-ink">
-            Рабочее приложение курьера TAGAM.
+            {{ $t("TAGAM courier workspace") }}
           </h1>
           <p class="mt-5 max-w-md text-[17px] font-semibold leading-7 text-tagam-muted">
-            Заказы, смена, карта и кошелек в одном понятном интерфейсе поверх коробочной логики KMRS.
+            {{ $t("Orders shifts map and wallet in one clear interface over KMRS boxed logic") }}.
           </p>
           <div class="mt-8 grid max-w-lg grid-cols-3 gap-3">
             <div class="rounded-[8px] bg-white p-4 shadow-tagam-card">
               <div class="text-2xl font-black text-tagam-leaf">01</div>
-              <div class="mt-2 text-[12px] font-bold text-tagam-muted">Orders</div>
+              <div class="mt-2 text-[12px] font-bold text-tagam-muted">{{ $t("Orders") }}</div>
             </div>
             <div class="rounded-[8px] bg-white p-4 shadow-tagam-card">
               <div class="text-2xl font-black text-tagam-leaf">GPS</div>
-              <div class="mt-2 text-[12px] font-bold text-tagam-muted">Tracking</div>
+              <div class="mt-2 text-[12px] font-bold text-tagam-muted">{{ $t("Tracking") }}</div>
             </div>
             <div class="rounded-[8px] bg-white p-4 shadow-tagam-card">
-              <div class="text-2xl font-black text-tagam-leaf">₼</div>
-              <div class="mt-2 text-[12px] font-bold text-tagam-muted">Wallet</div>
+              <div class="text-2xl font-black text-tagam-leaf">TMT</div>
+              <div class="mt-2 text-[12px] font-bold text-tagam-muted">{{ $t("Wallet") }}</div>
             </div>
           </div>
         </div>
