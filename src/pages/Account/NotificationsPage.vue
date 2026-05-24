@@ -41,13 +41,13 @@
       <section class="mx-auto max-w-4xl">
         <div class="mb-4 rounded-[8px] bg-white p-5 shadow-tagam-card">
           <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-            Inbox
+            {{ $t("Inbox") }}
           </div>
           <h1 class="m-0 mt-1 text-[28px] font-black text-tagam-ink">
             {{ $t("Notifications") }}
           </h1>
           <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">
-            Dispatch messages, account updates and delivery alerts.
+            {{ $t("Dispatch messages, account updates and delivery alerts") }}.
           </p>
         </div>
       <q-infinite-scroll ref="nscroll" @load="getNotifications" :offset="250">

@@ -17,7 +17,7 @@
   <q-page class="min-h-screen bg-tagam-canvas px-4 pb-28 pt-5 text-tagam-ink">
     <section class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
-        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">Payout bank</div>
+        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">{{ $t("Payout bank") }}</div>
         <h1 class="m-0 mt-2 text-[28px] font-black leading-tight">
           {{ $t("Bank account details") }}
         </h1>

@@ -30,7 +30,7 @@
       <section class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
         <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-          Verification
+          {{ $t("Verification") }}
         </div>
         <h1 class="m-0 mt-2 text-[26px] font-black leading-tight">{{ $t("Driver's License") }}</h1>
       </div>

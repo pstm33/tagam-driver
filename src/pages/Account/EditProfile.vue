@@ -17,9 +17,9 @@
   <q-page class="min-h-screen bg-tagam-canvas px-4 pb-28 pt-5 text-tagam-ink">
     <section class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
-        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">Courier profile</div>
+        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">{{ $t("Courier profile") }}</div>
         <h1 class="m-0 mt-2 text-[28px] font-black leading-tight">{{ $t("Edit profile") }}</h1>
-        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-white/70">Update contact details used by dispatch and support.</p>
+        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-white/70">{{ $t("Update contact details used by dispatch and support") }}.</p>
       </div>
     <q-form @submit="onSubmit" class="rounded-[8px] border border-tagam-line bg-white p-4 shadow-tagam-card">
       <div>

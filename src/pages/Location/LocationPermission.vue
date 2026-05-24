@@ -40,7 +40,7 @@
         <div class="flex gap-3">
           <q-icon name="info" size="20px" class="mt-0.5 text-tagam-sky" />
           <div>
-            Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app.
+            {{ $t("Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app") }}.
           </div>
         </div>
       </div>

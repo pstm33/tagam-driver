@@ -33,7 +33,7 @@
         </q-item-section>
         <q-item-section>
           <q-item-label class="text-[15px] font-black text-tagam-ink">{{ items.payment_name }}</q-item-label>
-          <q-item-label class="text-[12px] font-semibold text-tagam-muted">Available balance top-up method</q-item-label>
+          <q-item-label class="text-[12px] font-semibold text-tagam-muted">{{ $t("Available balance top-up method") }}</q-item-label>
         </q-item-section>
         <q-item-section side>
           <q-icon name="chevron_right" class="text-tagam-muted" />

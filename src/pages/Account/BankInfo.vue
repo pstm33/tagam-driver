@@ -26,9 +26,9 @@
 
     <section v-else class="mx-auto max-w-4xl">
       <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
-        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">Payout bank</div>
+        <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">{{ $t("Payout bank") }}</div>
         <h1 class="m-0 mt-2 text-[28px] font-black leading-tight">{{ $t("Bank information") }}</h1>
-        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-white/70">Review and update payout bank details.</p>
+        <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-white/70">{{ $t("Review and update payout bank details") }}.</p>
       </div>
     <q-form @submit="onSubmit" class="rounded-[8px] border border-tagam-line bg-white p-4 shadow-tagam-card">
       <q-input

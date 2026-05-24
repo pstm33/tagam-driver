@@ -62,7 +62,9 @@ export default {
   "Your registration is now complete": "Your registration is now complete",
   "Click here to login": "Click here to login",
   "Today Schedule": "Today Schedule",
+  "You have no work schedule for today": "You have no work schedule for today",
   "View Car Documents": "View Car Documents",
+  "Car Documents": "Car Documents",
   "Starting in": "Starting in",
   Ongoing: "Ongoing",
   "Are you ready": "Are you ready",
@@ -125,6 +127,9 @@ export default {
   "Cash collected": "Cash collected",
   "Delivery pay": "Delivery pay",
   "Total Tips": "Total Tips",
+  "Delivery ledger": "Delivery ledger",
+  "Completed orders, collected cash and delivery pay by date":
+    "Completed orders, collected cash and delivery pay by date",
   "Transaction history": "Transaction history",
   "No available data": "No available data",
   History: "History",
@@ -153,6 +158,41 @@ export default {
     "Are you sure you want to permanently delete the selected item?",
   Hello: "Hello",
   "Account Settings": "Account Settings",
+  "Courier profile": "Courier profile",
+  "Update contact details used by dispatch and support":
+    "Update contact details used by dispatch and support",
+  Security: "Security",
+  "Update courier account credentials": "Update courier account credentials",
+  "Payout bank": "Payout bank",
+  "Review and update payout bank details":
+    "Review and update payout bank details",
+  "Keep courier identity and license data ready for dispatch approval":
+    "Keep courier identity and license data ready for dispatch approval",
+  "Courier transport": "Courier transport",
+  "Vehicle details used for shift assignment and dispatch identity":
+    "Vehicle details used for shift assignment and dispatch identity",
+  "Payment methods": "Payment methods",
+  "Payment method": "Payment method",
+  "Choose a provider to add a saved payment method":
+    "Choose a provider to add a saved payment method",
+  "Saved cards and wallets for courier balance top-ups":
+    "Saved cards and wallets for courier balance top-ups",
+  Inbox: "Inbox",
+  "Dispatch messages, account updates and delivery alerts":
+    "Dispatch messages, account updates and delivery alerts",
+  "Dispatch conversations and order support":
+    "Dispatch conversations and order support",
+  "Conversations appear when dispatch, merchant or customer support opens a thread":
+    "Conversations appear when dispatch, merchant or customer support opens a thread",
+  "Shift records": "Shift records",
+  "Past and assigned shift windows, vehicles and delivery counts":
+    "Past and assigned shift windows, vehicles and delivery counts",
+  "Available balance top-up method": "Available balance top-up method",
+  "No saved payments": "No saved payments",
+  "Add a card or wallet to top up faster":
+    "Add a card or wallet to top up faster",
+  "Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app":
+    "Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app",
   "Manage Profile": "Manage Profile",
   "Change Password": "Change Password",
   Documents: "Documents",
@@ -223,6 +263,10 @@ export default {
   Adjustment: "Adjustment",
   "View earnings activity": "View earnings activity",
   "Earnings Activity": "Earnings Activity",
+  "Earnings activity": "Earnings activity",
+  "Earnings detail": "Earnings detail",
+  "Order-level earnings, tips and delivery pay":
+    "Order-level earnings, tips and delivery pay",
   "Cash out history": "Cash out history",
   "Edit amount": "Edit amount",
   Cashout: "Cashout",

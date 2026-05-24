@@ -29,5 +29,8 @@ export default defineComponent({
   created() {
     this.$q.dark.set(this.Activity.dark_mode);
   },
+  methods: {
+    afterReceive() {},
+  },
 });
 </script>

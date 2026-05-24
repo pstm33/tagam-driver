@@ -6,13 +6,13 @@
           <div class="flex items-start justify-between gap-4">
             <div>
               <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-                Delivery ledger
+                {{ $t("Delivery ledger") }}
               </div>
               <h1 class="m-0 mt-1 text-[28px] font-black text-tagam-ink">
                 {{ $t("History") }}
               </h1>
               <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">
-                Completed orders, collected cash and delivery pay by date.
+                {{ $t("Completed orders, collected cash and delivery pay by date") }}.
               </p>
             </div>
             <q-btn icon="event" round unelevated class="bg-tagam-canvas text-tagam-ink">
@@ -24,7 +24,7 @@
               >
                 <q-date v-model="proxyDate" mask="YYYY-MM-DD" range>
                   <div class="row items-center justify-end q-gutter-sm">
-                    <q-btn label="Cancel" color="primary" flat v-close-popup />
+                    <q-btn :label="$t('Cancel')" color="primary" flat v-close-popup />
                     <q-btn
                       :label="$t('OK')"
                       color="primary"

@@ -115,7 +115,7 @@
                   class="font-black text-tagam-leaf"
                   dense
                   @click="endBreak"
-                  >End Break</q-btn
+                  >{{ $t("End Break") }}</q-btn
                 >
               </div>
 
@@ -320,7 +320,7 @@
                   {{ $t("You don't have any shifts starting soon") }}.
                 </template>
                 <template v-else>
-                  You have no work schedule for today
+                  {{ $t("You have no work schedule for today") }}
                 </template>
               </div>
               <p class="mt-2 text-[13px] font-semibold text-tagam-muted">
@@ -359,7 +359,7 @@
     :schedule_uuid="schedule_uuid"
     @after-attachphoto="afterAttachphoto"
   />
-  <PhotoCarousel ref="photo_carousel" title="Car Documents" :data="docs_data">
+  <PhotoCarousel ref="photo_carousel" :title="$t('Car Documents')" :data="docs_data">
   </PhotoCarousel>
 </template>
 

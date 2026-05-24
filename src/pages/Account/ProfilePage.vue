@@ -41,7 +41,7 @@
             </q-avatar>
             <div class="min-w-0 flex-1">
               <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-                Courier profile
+                {{ $t("Courier profile") }}
               </div>
               <h1 class="m-0 mt-1 truncate text-[27px] font-black leading-tight">
                 {{ data.first_name }} {{ data.last_name }}

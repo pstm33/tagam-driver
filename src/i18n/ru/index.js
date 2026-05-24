@@ -68,7 +68,9 @@ export default {
   "Skip For Now": "Пока пропустить",
   "Go online": "Выйти на линию",
   "Go offline": "Уйти с линии",
+  "You have no work schedule for today": "Сегодня нет рабочей смены",
   "View Car Documents": "Документы автомобиля",
+  "Car Documents": "Документы автомобиля",
   "Starting in": "Начало через",
   Ongoing: "Идет сейчас",
   "Are you ready": "Готовы начать",
@@ -137,7 +139,45 @@ export default {
   "Cash collected": "Получено наличными",
   "Delivery pay": "Оплата доставок",
   "Total Tips": "Чаевые",
+  "Delivery ledger": "Журнал доставок",
+  "Completed orders, collected cash and delivery pay by date":
+    "Выполненные заказы, собранные наличные и оплата доставок по датам",
   "Account Settings": "Настройки аккаунта",
+  "Courier profile": "Профиль курьера",
+  "Update contact details used by dispatch and support":
+    "Обновите контактные данные для диспетчера и поддержки",
+  Security: "Безопасность",
+  "Update courier account credentials": "Обновите данные входа курьера",
+  "Payout bank": "Банк для выплат",
+  "Review and update payout bank details":
+    "Проверьте и обновите банковские данные для выплат",
+  "Keep courier identity and license data ready for dispatch approval":
+    "Держите данные курьера и водительского удостоверения готовыми для проверки",
+  "Courier transport": "Транспорт курьера",
+  "Vehicle details used for shift assignment and dispatch identity":
+    "Данные транспорта используются для смен и идентификации курьера",
+  "Payment methods": "Способы оплаты",
+  "Payment method": "Способ оплаты",
+  "Choose a provider to add a saved payment method":
+    "Выберите провайдера, чтобы добавить сохраненный способ оплаты",
+  "Saved cards and wallets for courier balance top-ups":
+    "Сохраненные карты и кошельки для пополнения баланса",
+  Inbox: "Входящие",
+  "Dispatch messages, account updates and delivery alerts":
+    "Сообщения диспетчера, обновления аккаунта и уведомления о доставках",
+  "Dispatch conversations and order support":
+    "Диалоги с диспетчером и поддержка заказов",
+  "Conversations appear when dispatch, merchant or customer support opens a thread":
+    "Диалоги появятся, когда диспетчер, ресторан или поддержка клиента откроет чат",
+  "Shift records": "История смен",
+  "Past and assigned shift windows, vehicles and delivery counts":
+    "Прошедшие и назначенные смены, транспорт и количество доставок",
+  "Available balance top-up method": "Способ пополнения доступного баланса",
+  "No saved payments": "Нет сохраненных способов оплаты",
+  "Add a card or wallet to top up faster":
+    "Добавьте карту или кошелек для быстрого пополнения",
+  "Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app":
+    "В браузере геолокация может быть заблокирована при локальном тестировании. Пропуск оставит панель курьера доступной, а в мобильном приложении GPS будет запрошен отдельно",
   "Manage Profile": "Профиль",
   "Change Password": "Сменить пароль",
   "Change password": "Смена пароля",
@@ -161,6 +201,15 @@ export default {
   "Driving License": "Водительское удостоверение",
   License: "Права",
   "Driver's License": "Водительское удостоверение",
+  "We need your driving license information":
+    "Нужны данные водительского удостоверения",
+  "Enter your license correctly": "Введите данные удостоверения правильно",
+  "Make sure the entire license and all the details are VISIBLE":
+    "Убедитесь, что удостоверение и все данные полностью видны",
+  "Front Photo of ID": "Фото лицевой стороны",
+  "Back Photo of ID": "Фото обратной стороны",
+  "Maximum 2MB. Accepted types: PNG. JPG":
+    "Максимум 2 МБ. Форматы: PNG, JPG",
   "License number": "Номер удостоверения",
   "Expiration date": "Срок действия",
   "Take a Photo": "Сделать фото",
@@ -176,6 +225,8 @@ export default {
   Color: "Цвет",
   "Bank account": "Банковский счет",
   "Bank account details": "Данные банковского счета",
+  "Please enter correct bank details to avoid delayed payment":
+    "Введите корректные банковские данные, чтобы избежать задержки выплаты",
   "Bank account holders name": "Владелец счета",
   "Bank account number/IBAN": "Номер счета / IBAN",
   "Swift Code": "SWIFT-код",
@@ -184,6 +235,7 @@ export default {
   "Bank branch": "Отделение банка",
   Payments: "Платежи",
   "No Payment available": "Нет способов оплаты",
+  "you have not added payment yet": "Вы еще не добавили способ оплаты",
   "Add new payment": "Добавить способ оплаты",
   "Add payment": "Добавить оплату",
   "Delete account": "Удаление аккаунта",
@@ -200,6 +252,10 @@ export default {
   Adjustment: "Корректировка",
   "View earnings activity": "История заработка",
   "Earnings Activity": "Активность заработка",
+  "Earnings activity": "Активность заработка",
+  "Earnings detail": "Детали заработка",
+  "Order-level earnings, tips and delivery pay":
+    "Заработок по заказам, чаевые и оплата доставки",
   "Cash out history": "История выводов",
   Cashout: "Вывод",
   "Processing fee": "Комиссия",
@@ -210,6 +266,8 @@ export default {
   "Proof of Car": "Фото транспорта",
   "Add photo": "Добавить фото",
   "Delete All": "Удалить все",
+  "Driver Overview": "Обзор курьера",
+  "Total reviews": "Всего отзывов",
   "Filter by zone": "Фильтр по зоне",
   Clear: "Очистить",
   Apply: "Применить",

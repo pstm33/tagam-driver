@@ -4,13 +4,13 @@
       <section class="mx-auto max-w-4xl">
         <div class="mb-4 rounded-[8px] bg-white p-5 shadow-tagam-card">
           <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-            Shift records
+            {{ $t("Shift records") }}
           </div>
           <h1 class="m-0 mt-1 text-[28px] font-black text-tagam-ink">
             {{ $t("My Schedule") }}
           </h1>
           <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">
-            Past and assigned shift windows, vehicles and delivery counts.
+            {{ $t("Past and assigned shift windows, vehicles and delivery counts") }}.
           </p>
         </div>
         <q-infinite-scroll ref="nscroll" @load="getHistory" :offset="300">

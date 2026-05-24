@@ -26,7 +26,7 @@
         <div class="rounded-[8px] border border-tagam-line bg-white p-5 shadow-tagam-card">
           <div class="mb-5 rounded-[8px] bg-tagam-ink p-5 text-white">
             <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-              Verification
+              {{ $t("Verification") }}
             </div>
             <h1 class="m-0 mt-2 text-[26px] font-black leading-tight">
               {{ $t("We need your driving license information") }}

@@ -19,13 +19,13 @@
       <section class="mx-auto max-w-4xl">
         <div class="mb-4 rounded-[8px] bg-white p-5 shadow-tagam-card">
           <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-            Earnings activity
+            {{ $t("Earnings activity") }}
           </div>
           <h1 class="m-0 mt-1 text-[28px] font-black text-tagam-ink">
             {{ $t("Earnings Activity") }}
           </h1>
           <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-tagam-muted">
-            Order-level earnings, tips and delivery pay.
+            {{ $t("Order-level earnings, tips and delivery pay") }}.
           </p>
         </div>
 

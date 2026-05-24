@@ -13,7 +13,7 @@
         <q-toolbar-title class="text-[18px] font-black tracking-normal">
           {{ $t("Live Chat") }}
           <div class="text-[12px] font-semibold text-tagam-muted">
-            Dispatch conversations and order support
+            {{ $t("Dispatch conversations and order support") }}
           </div>
         </q-toolbar-title>
       </q-toolbar>
@@ -28,7 +28,7 @@
             {{ $t("Chat will show here") }}
           </div>
           <div class="mt-2 max-w-[280px] text-[13px] font-semibold text-tagam-muted">
-            Conversations appear when dispatch, merchant or customer support opens a thread.
+            {{ $t("Conversations appear when dispatch, merchant or customer support opens a thread") }}.
           </div>
         </div>
       </template>

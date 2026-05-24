@@ -68,7 +68,9 @@ export default {
   "Skip For Now": "Häzirlikçe geçmek",
   "Go online": "Onlaýna çykmak",
   "Go offline": "Oflayna geçmek",
+  "You have no work schedule for today": "Şu gün iş smenasy ýok",
   "View Car Documents": "Ulag resminamalary",
+  "Car Documents": "Ulag resminamalary",
   "Starting in": "Başlanýar",
   Ongoing: "Dowam edýär",
   "Are you ready": "Başlamaga taýynmy?",
@@ -137,7 +139,45 @@ export default {
   "Cash collected": "Alnan nagt",
   "Delivery pay": "Eltip bermek tölegi",
   "Total Tips": "Çaý puly",
+  "Delivery ledger": "Eltip beriş ýazgysy",
+  "Completed orders, collected cash and delivery pay by date":
+    "Tamamlanan sargytlar, alnan nagt we eltip beriş tölegi seneler boýunça",
   "Account Settings": "Hasap sazlamalary",
+  "Courier profile": "Kurýer profili",
+  "Update contact details used by dispatch and support":
+    "Dispetçer we goldaw üçin aragatnaşyk maglumatlaryny täzeläň",
+  Security: "Howpsuzlyk",
+  "Update courier account credentials": "Kurýer hasabynyň giriş maglumatlaryny täzeläň",
+  "Payout bank": "Töleg banky",
+  "Review and update payout bank details":
+    "Töleg bank maglumatlaryny barlaň we täzeläň",
+  "Keep courier identity and license data ready for dispatch approval":
+    "Kurýer şahsyýet we şahadatnama maglumatlaryny tassyklama üçin taýýar saklaň",
+  "Courier transport": "Kurýer ulagy",
+  "Vehicle details used for shift assignment and dispatch identity":
+    "Ulag maglumatlary smena bellemek we kurýeri tanamak üçin ulanylýar",
+  "Payment methods": "Töleg usullary",
+  "Payment method": "Töleg usuly",
+  "Choose a provider to add a saved payment method":
+    "Saklanan töleg usulyny goşmak üçin üpjün edijini saýlaň",
+  "Saved cards and wallets for courier balance top-ups":
+    "Balans doldurmak üçin saklanan kartlar we gapjyklar",
+  Inbox: "Gelýänler",
+  "Dispatch messages, account updates and delivery alerts":
+    "Dispetçer habarlary, hasap täzelenmeleri we eltip beriş duýduryşlary",
+  "Dispatch conversations and order support":
+    "Dispetçer gepleşikleri we sargyt goldawy",
+  "Conversations appear when dispatch, merchant or customer support opens a thread":
+    "Dispetçer, restoran ýa-da müşderi goldawy söhbet açanda gepleşikler görünýär",
+  "Shift records": "Smena ýazgylary",
+  "Past and assigned shift windows, vehicles and delivery counts":
+    "Öňki we bellenen smenalar, ulaglar we eltip beriş sany",
+  "Available balance top-up method": "Elýeterli balansy doldurmak usuly",
+  "No saved payments": "Saklanan töleg usuly ýok",
+  "Add a card or wallet to top up faster":
+    "Çalt doldurmak üçin kart ýa-da gapjyk goşuň",
+  "Browser location can be blocked during local testing. Skipping keeps the courier dashboard available; mobile tracking will still request GPS on the real app":
+    "Lokal synagda brauzer geolokasiýany bloklap biler. Geçmek kurýer panelini açyk saklar, mobil programmada GPS aýratyn soralar",
   "Manage Profile": "Profil",
   "Change Password": "Paroly üýtgetmek",
   "Change password": "Paroly üýtgetmek",
@@ -161,6 +201,15 @@ export default {
   "Driving License": "Sürüjilik şahadatnamasy",
   License: "Şahadatnama",
   "Driver's License": "Sürüjilik şahadatnamasy",
+  "We need your driving license information":
+    "Sürüjilik şahadatnama maglumatlaryňyz gerek",
+  "Enter your license correctly": "Şahadatnama maglumatlaryny dogry giriziň",
+  "Make sure the entire license and all the details are VISIBLE":
+    "Şahadatnama we ähli maglumatlar doly görünýändigine göz ýetiriň",
+  "Front Photo of ID": "Şahadatnamanyň öň tarapy",
+  "Back Photo of ID": "Şahadatnamanyň arka tarapy",
+  "Maximum 2MB. Accepted types: PNG. JPG":
+    "Maksimum 2 MB. Görnüşler: PNG, JPG",
   "License number": "Şahadatnama belgisi",
   "Expiration date": "Möhleti",
   "Take a Photo": "Surata almak",
@@ -176,6 +225,8 @@ export default {
   Color: "Reňk",
   "Bank account": "Bank hasaby",
   "Bank account details": "Bank hasaby maglumatlary",
+  "Please enter correct bank details to avoid delayed payment":
+    "Töleg gijikmez ýaly bank maglumatlaryny dogry giriziň",
   "Bank account holders name": "Hasap eýesi",
   "Bank account number/IBAN": "Hasap belgisi / IBAN",
   "Swift Code": "SWIFT kody",
@@ -184,6 +235,7 @@ export default {
   "Bank branch": "Bank şahamçasy",
   Payments: "Tölegler",
   "No Payment available": "Töleg görnüşi ýok",
+  "you have not added payment yet": "Siz entek töleg usulyny goşmadyňyz",
   "Add new payment": "Täze töleg görnüşini goşmak",
   "Add payment": "Töleg goşmak",
   "Delete account": "Hasaby pozmak",
@@ -200,6 +252,10 @@ export default {
   Adjustment: "Düzediş",
   "View earnings activity": "Girdeji taryhy",
   "Earnings Activity": "Girdeji hereketleri",
+  "Earnings activity": "Girdeji hereketleri",
+  "Earnings detail": "Girdeji jikme-jigi",
+  "Order-level earnings, tips and delivery pay":
+    "Sargyt boýunça girdeji, çaý puly we eltip beriş tölegi",
   "Cash out history": "Çykaryş taryhy",
   Cashout: "Pul çykarmak",
   "Processing fee": "Komissiýa",
@@ -210,6 +266,8 @@ export default {
   "Proof of Car": "Ulag subutnamasy",
   "Add photo": "Surat goşmak",
   "Delete All": "Hemmesini pozmak",
+  "Driver Overview": "Kurýer syny",
+  "Total reviews": "Jemi synlar",
   "Filter by zone": "Zolak boýunça süzmek",
   Clear: "Arassalamak",
   Apply: "Ulanmak",

@@ -21,7 +21,7 @@
         <div class="mb-4 flex items-start justify-between gap-4">
           <div>
             <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-              Earnings detail
+              {{ $t("Earnings detail") }}
             </div>
             <h1 class="m-0 mt-1 text-[30px] font-black">{{ balance || "--" }}</h1>
             <p class="m-0 mt-2 text-[13px] font-semibold leading-6 text-white/70">

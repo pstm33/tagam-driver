@@ -8,8 +8,8 @@
     <template v-if="!hasData">
       <div class="rounded-[8px] border border-dashed border-[#d9d2c5] bg-white p-5 text-center">
         <q-icon name="credit_card_off" size="30px" class="text-tagam-muted" />
-        <div class="mt-2 text-[14px] font-black text-tagam-ink">No saved payments</div>
-        <div class="mt-1 text-[12px] font-semibold text-tagam-muted">Add a card or wallet to top up faster.</div>
+        <div class="mt-2 text-[14px] font-black text-tagam-ink">{{ $t("No saved payments") }}</div>
+        <div class="mt-1 text-[12px] font-semibold text-tagam-muted">{{ $t("Add a card or wallet to top up faster") }}.</div>
       </div>
     </template>
     <template v-else>
