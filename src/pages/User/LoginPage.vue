@@ -4,13 +4,8 @@
   >
     <q-toolbar class="mx-auto h-16 max-w-5xl px-5">
       <div class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-[8px] bg-tagam-leaf text-lg font-black text-white">
-          T
-        </div>
+        <img src="/tagam-logo.svg" alt="TAGAM" class="h-8 w-auto" />
         <div class="leading-tight">
-          <div class="text-[13px] font-extrabold tracking-[0.16em] text-tagam-leaf">
-            TAGAM
-          </div>
           <div class="text-[11px] font-semibold text-tagam-muted">
             Driver app
           </div>
@@ -43,7 +38,7 @@
     <section class="mx-auto grid min-h-[calc(100vh-8.5rem)] max-w-5xl items-center gap-8 md:grid-cols-[1.05fr_0.95fr]">
       <div class="hidden md:block">
         <div class="max-w-xl">
-          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-tagam-line bg-white px-3 py-2 text-[12px] font-extrabold uppercase tracking-[0.12em] text-tagam-leaf shadow-tagam-card">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-tagam-line bg-tagam-mint px-3 py-2 text-[12px] font-extrabold uppercase tracking-[0.12em] text-tagam-leaf shadow-tagam-card">
             KMRS courier module
           </div>
           <h1 class="m-0 text-[46px] font-black leading-[1.02] text-tagam-ink">
@@ -71,8 +66,8 @@
 
       <div class="mx-auto w-full max-w-[430px] rounded-[8px] border border-tagam-line bg-white p-5 shadow-tagam-soft sm:p-7">
         <div>
-          <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-[8px] bg-tagam-mint text-xl font-black text-tagam-leaf">
-            T
+          <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-tagam-mint ring-1 ring-tagam-line">
+            <img src="/iconsplash.png" alt="" class="h-12 w-12 object-contain" />
           </div>
           <h2 class="m-0 text-[28px] font-black leading-tight text-tagam-ink">
             {{ $t("Let's Sign You In") }}

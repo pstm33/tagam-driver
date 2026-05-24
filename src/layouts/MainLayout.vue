@@ -12,10 +12,8 @@
           @click="drawerLeft = !drawerLeft"
         />
         <q-toolbar-title>
-          <div class="leading-tight">
-            <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-              TAGAM Driver
-            </div>
+          <div class="flex min-w-0 items-center gap-3 leading-tight">
+            <img src="/tagam-logo.svg" alt="TAGAM" class="h-7 w-auto shrink-0" />
             <div class="text-[15px] font-black text-tagam-ink">
               {{ $t(Activity.title) }}
             </div>
@@ -27,6 +25,7 @@
     <q-drawer v-model="drawerLeft" :width="292" class="tagam-page">
       <div class="px-4 pb-4 pt-5">
         <div class="tagam-hero p-4">
+          <img src="/tagam-logo.svg" alt="TAGAM" class="mb-4 h-8 w-auto" />
           <div class="flex items-center gap-3">
             <q-avatar size="48px">
                 <q-img :src="data.avatar" fit="cover" spinner-size="20px">

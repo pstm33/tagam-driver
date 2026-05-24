@@ -5,7 +5,7 @@
     dense
     indicator-color="transparent"
     active-color="white"
-    class="modern-tabs bg-white/95 px-1 text-tagam-muted backdrop-blur"
+    class="modern-tabs px-1 text-tagam-muted backdrop-blur"
     align="justify"
   >
     <q-route-tab
