@@ -16,7 +16,7 @@
             <div class="text-sm font-semibold text-tagam-ink">#{{ data.order_id }}</div>
           </div>
           <div class="tagam-chip">
-            Drop-off
+            {{ $t("Drop-off") }}
           </div>
         </div>
         <div class="row items-center q-col-gutter-md">
@@ -69,7 +69,7 @@
     >
       <q-card-section class="q-pa-md">
         <p class="tagam-eyebrow no-margin">{{ $t("Order Details") }}</p>
-        <div class="q-mt-xs text-sm font-bold text-slate-950">Order#{{ data.order_id }}</div>
+        <div class="q-mt-xs text-sm font-bold text-slate-950">{{ $t("Order#") }}{{ data.order_id }}</div>
         <div class="text-sm font-medium leading-normal text-slate-600">
           <template v-if="order_meta[data.order_id]">
             <template v-if="order_meta[data.order_id].address1">{{
@@ -109,7 +109,7 @@
         <q-space class="q-pa-lg"></q-space>
         <q-space class="q-pa-md"></q-space>
         <q-btn
-          :label="$t('Drop-off')"
+          :label="$t('Mark as delivered')"
           @click="confirm_dialog = !confirm_dialog"
           unelevated
           class="tagam-action fit text-weight-bold"
@@ -126,8 +126,7 @@
       <q-card-section class="q-pa-lg">
         <div class="text-center">
           <div class="text-base font-bold text-slate-900">
-            {{ $t("Do you confirm order#") }}{{ data.order_id }}
-            {{ $t("Drop-off") }}?
+            {{ $t("Do you confirm order#") }}{{ data.order_id }}?
           </div>
         </div>
       </q-card-section>
@@ -135,12 +134,11 @@
         <q-btn
           color="primary"
           no-caps
-          :label="$t('Confirm Drop-off')"
+          :label="$t('Confirm delivery')"
           unelevated
           class="fit rounded-md text-weight-bold"
           size="lg"
           @click="confirm_dialog_drop = true"
-          :style="`background-color:${data.delivery_steps.status_data.bg_color} !important;color:${data.delivery_steps.status_data.font_color} !important;`"
         />
         <q-btn
           color="grey-7"
@@ -166,8 +164,8 @@
     <q-card class="tagam-page">
       <q-bar class="bg-white q-pa-md shadow-sm" style="height: auto">
         <div class="col text-center">
-          <div class="text-base font-bold text-slate-900">{{ $t("Confirm Drop-off") }}</div>
-          <div class="text-xs font-semibold text-slate-500">Order #{{ data.order_id }}</div>
+          <div class="text-base font-bold text-slate-900">{{ $t("Confirm delivery") }}</div>
+          <div class="text-xs font-semibold text-slate-500">{{ $t("Order#") }}{{ data.order_id }}</div>
         </div>
         <q-btn dense flat icon="close" v-close-popup>
           <q-tooltip class="bg-white text-primary">{{ $t("Close") }}</q-tooltip>
@@ -293,7 +291,7 @@
       </q-card-section>
       <q-card-actions class="fixed-bottom bg-white q-pa-md shadow-up">
         <q-btn
-          :label="$t('Confirm Drop-off')"
+          :label="$t('Confirm delivery')"
           :loading="loading"
           :disabled="!hasAddedProof"
           @click="changeOrderStatus('orderdelivered')"

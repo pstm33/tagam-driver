@@ -120,12 +120,11 @@
             class="tagam-action text-white text-weight-bold btn-11"
           >
             <q-item-section class="text-center font17">{{
-              data.delivery_steps.label
+              $t(data.delivery_steps.label)
             }}</q-item-section>
             <q-item-section avatar>
               <q-avatar
                 text-color="white"
-                :style="`color:${data.delivery_steps.status_data.font_color} !important;`"
                 icon="las la-angle-double-right"
               />
             </q-item-section>

@@ -100,7 +100,7 @@ export default {
       if (this.expanded) {
         return $item_count + " " + $fastened;
       }
-      return this.$t("View order") + " " + $fastened + "(" + $item_count + ")";
+      return this.$t("View order items", { count: $item_count });
     },
     hasData() {
       if (Object.keys(this.order_items).length > 0) {

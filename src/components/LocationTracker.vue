@@ -27,6 +27,7 @@ import { CapacitorHttp } from "@capacitor/core";
 import { registerPlugin } from "@capacitor/core";
 import config from "src/api/config";
 import auth from "src/api/auth";
+import { api } from "src/boot/axios";
 const BackgroundGeolocation = registerPlugin("BackgroundGeolocation");
 import { firebaseDb, firebaseCollectionEnum } from "src/boot/FirebaseChat";
 import {
@@ -50,6 +51,7 @@ export default {
     const LocationStore = useLocationStore();
     const Activity = useActivityStore();
     const watchId = ref(null);
+    const devWatchTimer = ref(null);
     const driverInfo = ref(undefined);
 
     const lastUpdate = ref(0);
@@ -75,10 +77,15 @@ export default {
     onUnmounted(() => {
       if (!$q.capacitor) {
         stopWatching();
+        stopDevWatching();
       }
     });
 
     async function checkLocationPermissionWeb() {
+      if (APIinterface.getSession("dev_location_enabled") == 1) {
+        startDevWatching();
+        return;
+      }
       const permission = await Geolocation.checkPermissions();
       if (permission.location == "granted") {
         //console.log("watchId", watchId.value);
@@ -94,6 +101,45 @@ export default {
           });
         }
       }
+    }
+
+    function startDevWatching() {
+      if (devWatchTimer.value) {
+        return;
+      }
+
+      sendDevLocation();
+      devWatchTimer.value = window.setInterval(sendDevLocation, updateInterval.value);
+    }
+
+    function stopDevWatching() {
+      if (devWatchTimer.value) {
+        window.clearInterval(devWatchTimer.value);
+        devWatchTimer.value = null;
+      }
+    }
+
+    function sendDevLocation() {
+      const lat = Number(APIinterface.getSession("dev_location_lat") || 39.992068);
+      const lng = Number(APIinterface.getSession("dev_location_lng") || 52.977486);
+      LocationStore.coordinates = {
+        lat,
+        lng,
+        accuracy: 10,
+        altitude: "",
+        altitudeAccuracy: "",
+        speed: 0,
+        bearing: "",
+        time: Date.now(),
+        simulated: true,
+        created_at: APIinterface.getDateTimeNow(),
+        driver_id: driverInfo.value?.driver_id,
+      };
+      newPosition.value = { latitude: lat, longitude: lng };
+      location_resp.value = "update test location";
+      lastSentPosition.value = { latitude: lat, longitude: lng };
+      httpLocation();
+      setFirebaseLocation();
     }
 
     function startWatching() {
@@ -315,32 +361,43 @@ export default {
 
     const httpLocation = async () => {
       try {
-        //console.log("httpLocation");
+        const params = {
+          latitude: String(LocationStore.coordinates.lat),
+          longitude: String(LocationStore.coordinates.lng),
+          accuracy: String(LocationStore.coordinates.accuracy),
+          altitude: String(LocationStore.coordinates.altitude),
+          altitudeAccuracy: String(
+            LocationStore.coordinates.altitudeAccuracy
+          ),
+          speed: String(LocationStore.coordinates.speed),
+          bearing: String(LocationStore.coordinates.bearing),
+          time: String(LocationStore.coordinates.time),
+          simulated: String(LocationStore.coordinates.simulated),
+        };
+
+        if (!$q.capacitor) {
+          await api.get("/updateLocation", {
+            headers: { Authorization: "token " + auth.getToken() },
+            params,
+          });
+          return;
+        }
+
         const options = {
           url: config.api_base_url + "/updateLocation",
           headers: { Authorization: "token " + auth.getToken() },
-          params: {
-            latitude: String(LocationStore.coordinates.lat),
-            longitude: String(LocationStore.coordinates.lng),
-            accuracy: String(LocationStore.coordinates.accuracy),
-            altitude: String(LocationStore.coordinates.altitude),
-            altitudeAccuracy: String(
-              LocationStore.coordinates.altitudeAccuracy
-            ),
-            speed: String(LocationStore.coordinates.speed),
-            bearing: String(LocationStore.coordinates.bearing),
-            time: String(LocationStore.coordinates.time),
-            simulated: String(LocationStore.coordinates.simulated),
-          },
+          params,
         };
-        let HttpResponse = await CapacitorHttp.get(options);
+        await CapacitorHttp.get(options);
       } catch (err) {
         console.log(err);
       }
     };
 
     const setFirebaseLocation = async () => {
-      console.debug("setFirebaseLocation", driverInfo.value);
+      if (!driverInfo.value?.driver_uuid) {
+        return;
+      }
       const docRef = doc(
         firebaseDb,
         firebaseCollectionEnum.driver,

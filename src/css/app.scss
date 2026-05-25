@@ -108,9 +108,14 @@ body.body--light {
 
 .tw-header {
   background: rgba(16, 17, 14, 0.84) !important;
-  color: var(--app-fg) !important;
+  color: #ffffff !important;
   border-bottom: 1px solid var(--app-border);
   backdrop-filter: blur(18px);
+}
+
+.tw-header .text-tagam-ink,
+.tw-header .q-toolbar__title {
+  color: #ffffff !important;
 }
 
 .tagam-page {
@@ -207,6 +212,12 @@ body.body--light {
   box-shadow: 0 14px 34px rgba(255, 157, 22, 0.28);
 }
 
+.tagam-action .q-item__section,
+.tagam-action .q-btn__content,
+.tagam-action .q-icon {
+  color: var(--app-on-accent) !important;
+}
+
 .tagam-action-warn {
   background: #ff6b4a !important;
   box-shadow: 0 14px 30px rgba(255, 107, 74, 0.24);
@@ -257,6 +268,24 @@ body.body--light {
   border-radius: 8px;
   margin: 6px 3px;
   font-weight: 800;
+  color: var(--app-muted) !important;
+  opacity: 1 !important;
+}
+
+.modern-tabs .q-tab:not(.q-tab--active) {
+  background: rgba(25, 22, 16, 0.035);
+}
+
+.modern-tabs .q-tab:not(.q-tab--active) .q-tab__label,
+.modern-tabs .q-tab:not(.q-tab--active) .q-tab__icon {
+  color: var(--app-muted) !important;
+}
+
+body.body--light .modern-tabs .q-tab:not(.q-tab--active),
+body.body--light .modern-tabs .q-tab:not(.q-tab--active) .q-tab__content,
+body.body--light .modern-tabs .q-tab:not(.q-tab--active) .q-tab__label,
+body.body--light .modern-tabs .q-tab:not(.q-tab--active) .q-tab__icon {
+  color: #6c685f !important;
 }
 
 .modern-tabs .q-tab__icon {

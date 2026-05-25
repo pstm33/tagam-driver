@@ -24,7 +24,7 @@
       <section class="mx-auto max-w-4xl">
         <div class="mb-4 rounded-[8px] bg-tagam-ink p-5 text-white shadow-tagam-soft">
           <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-lime">
-            Dispatch area
+            {{ $t("Dispatch area") }}
           </div>
           <h1 class="m-0 mt-2 text-[28px] font-black leading-tight">
             {{ $t("Select Zone") }}
@@ -38,9 +38,9 @@
           </p>
         </div>
 
-        <div class="overflow-hidden rounded-[8px] border border-tagam-line bg-white shadow-tagam-card">
+        <div v-if="hasZones" class="overflow-hidden rounded-[8px] border border-tagam-line bg-white shadow-tagam-card">
           <q-list separator>
-            <q-item tag="label" v-ripple v-for="items in getZone" :key="items" class="px-4 py-3">
+            <q-item tag="label" v-ripple v-for="items in getZone" :key="items.zone_id" class="px-4 py-3">
               <q-item-section avatar>
                 <q-checkbox v-model="zone_id" :val="items.zone_id" color="green-8" />
               </q-item-section>
@@ -53,14 +53,24 @@
             </q-item>
           </q-list>
         </div>
+        <div v-else class="rounded-[8px] border border-dashed border-tagam-line bg-white p-6 text-center shadow-tagam-card">
+          <q-icon name="las la-map-marked-alt" size="2.4em" class="text-tagam-muted" />
+          <div class="mt-3 text-[18px] font-black text-tagam-ink">
+            {{ $t("No zones available") }}
+          </div>
+          <p class="m-0 mt-2 text-[13px] font-semibold leading-5 text-tagam-muted">
+            {{ $t("Create or assign zones in KMRS backoffice for this merchant") }}.
+          </p>
+        </div>
       </section>
       <q-footer class="bg-white/90 p-4 shadow-[0_-12px_30px_rgba(15,23,42,0.08)] backdrop-blur">
         <q-btn
-          label="Submit"
+          :label="$t('Submit')"
           size="lg"
           unelevated
           no-caps
           class="mx-auto h-13 w-full max-w-4xl rounded-[8px] bg-tagam-leaf font-black text-white"
+          :disable="!hasZones"
           @click="onSubmit"
         ></q-btn>
       </q-footer>
@@ -91,6 +101,9 @@ export default {
   computed: {
     getZone() {
       return this.data;
+    },
+    hasZones() {
+      return Array.isArray(this.data) && this.data.length > 0;
     },
   },
   methods: {

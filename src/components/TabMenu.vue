@@ -4,7 +4,6 @@
     v-model="tab"
     dense
     indicator-color="transparent"
-    active-color="white"
     class="modern-tabs px-1 text-tagam-muted backdrop-blur"
     align="justify"
   >

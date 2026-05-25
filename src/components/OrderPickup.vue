@@ -18,7 +18,7 @@
             </div>
           </div>
           <div class="tagam-chip">
-            Pickup
+            {{ $t("Pickup") }}
           </div>
         </div>
         <div class="row items-center q-col-gutter-md">
@@ -121,7 +121,7 @@
 
       <q-card-actions class="q-pa-md pt-0">
         <q-btn
-          :label="data.delivery_steps.label"
+          :label="$t(data.delivery_steps.label)"
           @click="confirm_dialog = !confirm_dialog"
           :loading="loading"
           unelevated
@@ -140,7 +140,7 @@
         <div class="text-center">
           <div class="text-base font-bold text-slate-900">
             {{ $t("Do you confirm order#") }}{{ data.order_id }}
-            {{ $t("pickup") }}?
+            {{ $t("Pickup") }}?
           </div>
         </div>
       </q-card-section>

@@ -34,14 +34,29 @@
 
         <div class="mb-4 rounded-[8px] border border-tagam-line bg-white p-4 shadow-tagam-card">
           <template v-if="loading_earnings">
-            <q-skeleton height="112px" square />
+            <q-skeleton height="168px" square />
+          </template>
+          <template v-else-if="!hasChartData">
+            <div class="flex min-h-[168px] items-center justify-center rounded-[8px] bg-tagam-canvas px-5 text-center">
+              <div>
+                <div class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-[8px] bg-tagam-cream text-tagam-ink">
+                  <q-icon name="las la-chart-bar" size="24px" />
+                </div>
+                <div class="text-[16px] font-black text-tagam-ink">
+                  {{ $t("No earnings for this period") }}
+                </div>
+                <p class="m-0 mt-1 text-[13px] font-semibold text-tagam-muted">
+                  {{ $t("Completed deliveries will appear here") }}
+                </p>
+              </div>
+            </div>
           </template>
           <template v-else>
               <apexchart
                 type="bar"
                 :options="chartOptions"
                 :series="series"
-                height="112"
+                height="168"
               ></apexchart>
           </template>
         </div>
@@ -130,7 +145,7 @@
                 class="mt-4 h-12 rounded-[8px] bg-tagam-leaf px-6 font-black text-white"
               ></q-btn>
               <q-space class="q-pa-xs"></q-space>
-              <p class="text-[13px] font-semibold text-tagam-muted">{{ max_cashout }}</p>
+              <p class="text-[13px] font-semibold text-tagam-muted">{{ displayMaxCashout }}</p>
             </template>
           </q-card-section>
         </div>
@@ -231,7 +246,27 @@ export default {
     this.Activity.setTitle(this.$t("Earnings"));
     this.refresh(null);
   },
-  computed: {},
+  computed: {
+    hasChartData() {
+      const chartData = this.charts_data?.data;
+      if (!Array.isArray(chartData)) {
+        return false;
+      }
+      return chartData.some((item) => Math.abs(Number(item || 0)) > 0);
+    },
+    displayMaxCashout() {
+      if (typeof this.max_cashout !== "string") {
+        return this.max_cashout;
+      }
+      const match = this.max_cashout.match(/^(.+?) is the max you can cash out each day$/);
+      if (match) {
+        return this.$t("{amount} is the max you can cash out each day", {
+          amount: match[1],
+        });
+      }
+      return this.$t(this.max_cashout);
+    },
+  },
   methods: {
     setDate(data) {
       this.chart_type = data;
@@ -283,8 +318,18 @@ export default {
               },
               parentHeightOffset: 0,
             },
+            states: {
+              hover: {
+                filter: {
+                  type: "darken",
+                  value: 0.08,
+                },
+              },
+            },
             plotOptions: {
               bar: {
+                borderRadius: 6,
+                columnWidth: "48%",
                 colors: {
                   ranges: [
                     {
@@ -300,7 +345,7 @@ export default {
               enabled: false,
               position: "bottom",
             },
-            colors: ["#81c784"],
+            colors: ["#f28a00"],
             axisBorder: {
               show: false,
             },

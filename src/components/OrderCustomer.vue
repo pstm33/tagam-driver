@@ -16,12 +16,12 @@
             <div class="text-sm font-semibold text-tagam-ink">#{{ data.order_id }}</div>
           </div>
           <div class="tagam-chip">
-            Destination
+            {{ $t("Destination") }}
           </div>
         </div>
 
-        <div class="row items-center q-col-gutter-md">
-          <div class="col">
+        <div class="flex flex-col gap-4">
+          <div>
             <p class="no-margin text-base font-black text-tagam-ink">{{ data.full_name }}</p>
             <p class="no-margin text-xs leading-normal text-slate-500">
               <template v-if="order_meta[data.order_id]">
@@ -35,36 +35,40 @@
               {{ order_meta[data.order_id].address_label }}
             </p>
           </div>
-          <div class="col-5 text-right">
-            <div class="flex items-center justify-end">
+          <div>
+            <div class="grid grid-cols-3 gap-2">
               <q-btn
-                round
+                no-caps
                 color="amber-6"
                 icon="las la-map"
-                size="md"
+                :label="$t('Map')"
+                size="13px"
                 unelevated
-                class="q-mr-sm"
+                class="h-11 rounded-[8px] font-black"
                 to="/home/maps"
               />
 
               <q-btn
-                round
+                no-caps
                 color="green-6"
                 icon="eva-message-circle-outline"
-                size="md"
+                :label="$t('Chat')"
+                size="13px"
                 unelevated
-                class="q-mr-sm"
+                class="h-11 rounded-[8px] font-black"
                 @click="getConversation(data)"
                 :loading="loading_chat"
               />
               <template v-if="order_meta[data.order_id]">
                 <q-btn
                   :href="'tel:' + order_meta[data.order_id].contact_number"
-                  round
+                  no-caps
                   color="green-6"
                   icon="eva-phone-call-outline"
-                  size="md"
+                  :label="$t('Call')"
+                  size="13px"
                   unelevated
+                  class="h-11 rounded-[8px] font-black"
                 />
               </template>
             </div>
@@ -158,12 +162,11 @@
               class="tagam-action text-white text-weight-bold btn-11"
             >
               <q-item-section class="text-center font17">{{
-                data.delivery_steps.label
+                $t(data.delivery_steps.label)
               }}</q-item-section>
               <q-item-section avatar>
                 <q-avatar
                   text-color="white"
-                  :style="`color:${data.delivery_steps.status_data.font_color} !important;`"
                   icon="las la-angle-double-right"
                 />
               </q-item-section>

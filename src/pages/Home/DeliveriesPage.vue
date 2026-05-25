@@ -9,7 +9,7 @@
                 {{ $t("Deliveries") }}
               </div>
               <h1 class="tagam-title mt-1">
-                {{ hasOrder ? data.delivery_steps.instructions : $t("Deliveries") }}
+                {{ hasOrder ? $t(data.delivery_steps.instructions) : $t("Deliveries") }}
               </h1>
               <p class="tagam-copy mt-2">
                 {{ $t("Pull down the page to refresh") }}
@@ -185,7 +185,7 @@ export default {
     data(newval, oldval) {
       if (newval.delivery_steps) {
         if (newval.delivery_steps.instructions) {
-          this.Activity.setTitle(newval.delivery_steps.instructions);
+          this.Activity.setTitle(this.$t(newval.delivery_steps.instructions));
         }
       }
     },
@@ -242,7 +242,7 @@ export default {
         if (APIinterface.empty($steps)) {
           this.getDelivery();
         } else {
-          this.Activity.setTitle(this.data.delivery_steps.instructions);
+          this.Activity.setTitle(this.$t(this.data.delivery_steps.instructions));
         }
       } else {
         this.getDelivery();

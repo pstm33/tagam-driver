@@ -3,7 +3,7 @@
     <q-toolbar class="mx-auto h-16 max-w-4xl px-4">
       <q-toolbar-title>
         <div class="text-[12px] font-extrabold uppercase tracking-[0.14em] text-tagam-leaf">
-          New assignment
+          {{ $t("New assignment") }}
         </div>
         <div class="text-[16px] font-black text-tagam-ink">
           {{ $t("New Order #") }}{{ data.order_id }}
@@ -20,7 +20,7 @@
     </q-toolbar>
   </q-header>
 
-  <q-page class="tagam-page pb-28">
+  <q-page class="tagam-page pb-64">
     <template v-if="!loading">
       <template v-if="hasData">
         <div class="h-[34vh] min-h-[260px] overflow-hidden border-b border-tagam-line bg-white">
@@ -82,7 +82,7 @@
           </div>
         </section>
 
-        <div class="fixed inset-x-0 bottom-0 z-10 border-t border-tagam-line bg-white/95 px-4 py-3 backdrop-blur">
+        <div class="fixed inset-x-0 bottom-[76px] z-[2500] border-t border-tagam-line bg-white/95 px-4 py-3 backdrop-blur">
           <div class="tagam-shell">
           <template v-if="Activity.settings_data.enabled_acceptance">
             <q-linear-progress
@@ -92,41 +92,40 @@
             />
           </template>
 
-          <div class="grid grid-cols-[1fr_auto] items-center gap-3">
-            <div>
-              <q-list bordered separator class="radius8">
-                <q-slide-item
-                  @left="onLeft"
-                  left-color="green-8"
-                  class="overflow-hidden rounded-[8px]"
-                >
-                  <template v-slot:left>
-                    <q-spinner color="white" size="2em" />
-                    {{ $t("Accepting Orders") }}
-                  </template>
-                  <q-item
-                    class="h-14 bg-tagam-night text-white"
-                  >
-                    <q-item-section class="text-center text-[17px] font-black">{{
-                      $t("Accept")
-                    }}</q-item-section>
-                    <q-item-section avatar>
-                      <q-avatar
-                        text-color="white"
-                        icon="las la-angle-double-right"
-                      />
-                    </q-item-section>
-                  </q-item>
-                </q-slide-item>
-              </q-list>
-            </div>
-            <div class="min-w-[88px] text-right">
-              <p class="m-0 text-[11px] font-bold text-tagam-muted">{{ $t("Order total") }}</p>
-              <div class="text-[16px] font-black text-tagam-leaf">
-                {{ data.total }}
-              </div>
-            </div>
-          </div>
+          <q-list bordered separator class="radius8">
+            <q-slide-item
+              @left="onLeft"
+              left-color="green-8"
+              class="overflow-hidden rounded-[8px] shadow-tagam-card"
+            >
+              <template v-slot:left>
+                <div class="flex items-center gap-2 text-[14px] font-black">
+                  <q-spinner color="white" size="1.6em" />
+                  {{ $t("Release to accept") }}
+                </div>
+              </template>
+              <q-item
+                class="tagam-action h-20 text-tagam-ink"
+              >
+                <q-item-section avatar class="pr-3">
+                  <q-avatar
+                    size="52px"
+                    class="bg-black/10 shadow-sm"
+                    text-color="dark"
+                    icon="las la-angle-double-right"
+                  />
+                </q-item-section>
+                <q-item-section>
+                  <div class="text-[20px] font-black leading-tight">
+                    {{ $t("Slide right to accept") }}
+                  </div>
+                  <div class="mt-1 text-[13px] font-semibold text-white/70">
+                    {{ $t("Drag the handle") }}
+                  </div>
+                </q-item-section>
+              </q-item>
+            </q-slide-item>
+          </q-list>
           </div>
         </div>
       </template>

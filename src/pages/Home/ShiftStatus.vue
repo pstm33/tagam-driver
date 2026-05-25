@@ -439,6 +439,10 @@ export default {
   },
   methods: {
     async locationWebEnabled() {
+      if (APIinterface.getSession("dev_location_enabled") == 1) {
+        this.location_enabled = true;
+        return;
+      }
       const permission = await Geolocation.checkPermissions();
       if (permission.location == "granted") {
         this.location_enabled = true;

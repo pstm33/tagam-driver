@@ -67,12 +67,15 @@
               <q-radio v-model="reason" :val="item" color="primary" dense />
             </q-item-section>
             <q-item-section>
-              <q-item-label class="font-bold" :class="{ 'text-tagam-leaf': reason == item }">{{
-                item
+              <q-item-label
+                class="font-bold text-tagam-ink"
+                :class="{ 'rounded-[8px] bg-tagam-cream px-2 py-1': reason == item }"
+              >{{
+                $t(item)
               }}</q-item-label>
             </q-item-section>
             <q-item-section side v-if="reason == item">
-              <q-icon name="check" color="green" />
+              <q-icon name="check" color="amber-8" />
             </q-item-section>
           </q-item>
 

@@ -48,6 +48,8 @@ export default {
     "Maximum 2MB. Accepted types: PNG. JPG",
   "Change Photo": "Change Photo",
   "Add Photo": "Add Photo",
+  Chat: "Chat",
+  Call: "Call",
   "Back Photo of ID": "Back Photo of ID",
   "Confirm Photo": "Confirm Photo",
   "Upload files": "Upload files",
@@ -373,6 +375,9 @@ export default {
   Decline: "Decline",
   "Delivery Details": "Delivery Details",
   "Accepting Orders": "Accepting Orders",
+  "Release to accept": "Release to accept",
+  "Slide right to accept": "Slide right to accept",
+  "Drag the handle": "Drag the handle",
   "Are you sure you want to decline this order":
     "Are you sure you want to decline this order",
   "Opps order details not available": "Opps order details not available",
@@ -386,6 +391,10 @@ export default {
   "Go offline": "Go offline",
   "Go online": "Go online",
   "Select Zone": "Select Zone",
+  "Dispatch area": "Dispatch area",
+  "No zones available": "No zones available",
+  "Create or assign zones in KMRS backoffice for this merchant":
+    "Create or assign zones in KMRS backoffice for this merchant",
   "Before you start receiving orders, please choose your preferred zone. Select a zone to get started and receive orders from your desired location":
     "Before you start receiving orders, please choose your preferred zone. Select a zone to get started and receive orders from your desired location",
 
@@ -417,6 +426,37 @@ export default {
   "Finish active schedule": "Finish active schedule",
 
   "View order": "View order",
+  "View order items": "View order items ({count})",
+  "New assignment": "New assignment",
+  Destination: "Destination",
+  Pickup: "Pickup",
+  "Drop-off": "Drop-off",
+  "Mark as delivered": "Mark as delivered",
+  "Confirm delivery": "Confirm delivery",
+  "Confirm Pickup": "Confirm pickup",
+  "Payment change": "Change due",
+  "Do you confirm order#": "Confirm action for order #",
+  "Go to restaurant": "Go to restaurant",
+  "Go to merchant": "Go to restaurant",
+  "Go to customer": "Go to customer",
+  "On the way to merchant": "On the way to restaurant",
+  "On the way to customer": "On the way to customer",
+  "Arrived at merchant": "Arrived at restaurant",
+  "Arrived at vendor": "Arrived at restaurant",
+  "Arrived at customer": "Arrived at customer",
+  "Waiting for order": "Waiting for order",
+  "Order pickup": "Order picked up",
+  "Unable to find address": "Unable to find address",
+  "Order was cancelled": "Order was cancelled",
+  "Food spill": "Food spill",
+  "Customer can’t be reached": "Customer cannot be reached",
+  "Customer can't be reached": "Customer cannot be reached",
+  "Dropoff address is changed": "Drop-off address changed",
+  "Dropoff is inaccessible": "Drop-off is inaccessible",
+  "No earnings for this period": "No earnings for this period",
+  "Completed deliveries will appear here": "Completed deliveries will appear here",
+  "{amount} is the max you can cash out each day":
+    "{amount} is the max you can cash out each day",
 };
 
 // endx

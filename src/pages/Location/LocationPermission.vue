@@ -69,6 +69,19 @@ export default {
       : "/home";
   },
   methods: {
+    enableBrowserTestLocation() {
+      APIinterface.setSession("skip_location", "");
+      APIinterface.setSession("dev_location_enabled", 1);
+      APIinterface.setSession("dev_location_lat", "39.992068");
+      APIinterface.setSession("dev_location_lng", "52.977486");
+      APIinterface.notify(
+        "green-6",
+        "Test location enabled for this browser.",
+        "my_location",
+        this.$q
+      );
+      this.$router.push(this.redirect);
+    },
     skipLocation() {
       APIinterface.setSession("skip_location", 1);
       this.$router.push(this.redirect);
@@ -88,19 +101,11 @@ export default {
               this.loading = false;
               APIinterface.hideLoadingBox(this.$q);
               console.debug(error);
-              APIinterface.setSession("skip_location", 1);
-              APIinterface.notify(
-                "amber-8",
-                "Location blocked in this browser. Continuing without live GPS.",
-                "info",
-                this.$q
-              );
-              this.$router.push(this.redirect);
+              this.enableBrowserTestLocation();
             }
           );
         } else {
-          APIinterface.setSession("skip_location", 1);
-          this.$router.push(this.redirect);
+          this.enableBrowserTestLocation();
         }
       } else {
         try {
